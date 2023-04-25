@@ -2,6 +2,7 @@ import { Col, Row, Typography } from "antd";
 import React from "react";
 import Layouts from "../layouts";
 import styles from "../../styles/Home.module.css";
+import Footer from "../footer";
 const HomePage = () => {
   return (
     <>
@@ -100,6 +101,7 @@ const HomePage = () => {
           </Row>
         </div>
       </div>
+      <Footer />
     </>
   );
 };

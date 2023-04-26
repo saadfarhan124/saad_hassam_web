@@ -1,6 +1,6 @@
 import { Col, Row, Typography } from "antd";
 import React from "react";
-import Layouts from "../layouts";
+import Layouts from "../../components/layouts";
 import styles from "../../styles/Home.module.css";
 import Footer from "../footer";
 const HomePage = () => {
@@ -32,7 +32,7 @@ const HomePage = () => {
             <Col xs={24} md={16}>
               <p className={styles.coltwopara}>
                 As Senior Concept Artist, I helped a struggling team deliver one
-                project per week. As Team Lead, I improved the team's
+                project per week. As Team Lead, I improved the team&apos;s
                 performance, resulting in two high-quality projects per week. It
                 was an amazing experience and equipped me with strong leadership
                 and project management skills.

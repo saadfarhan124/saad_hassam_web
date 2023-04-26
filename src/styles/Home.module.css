@@ -3,8 +3,8 @@
     font-size: 20px;
    }
    .container {
-    height: 100vh;
-    background-image: url('../assets/images/r1.png') ;
+    height: 100vh; 
+    background-image: url('../../public/assets/images/r1.png') ;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;

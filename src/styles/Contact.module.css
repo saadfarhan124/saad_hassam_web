@@ -1,7 +1,7 @@
  
 .container {
     height: 100vh;
-    background-image: url('../assets/images/r3.png') ;
+    background-image: url('../../public/assets/images/r3.png') ;
     background-repeat: no-repeat;
     background-size: 80% 100%;
  background-position: top 50px left ;

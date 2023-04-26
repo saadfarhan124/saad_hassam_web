@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "../../styles/Contact.module.css";
-import Layouts from "../layouts";
+import Layouts from "../../components/layouts";
 import { Col, Row } from "antd";
 import Footer from "../footer";
 const Contact = () => {

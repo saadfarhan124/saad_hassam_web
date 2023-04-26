@@ -11,8 +11,9 @@ const Layouts = (props) => {
         <Link href="/profile">
           <button className="nav-button">Profile</button>
         </Link>
-
-        <button className="nav-button">Experience</button>
+        <Link href={"/experience"}>
+          <button className="nav-button">Experience</button>
+        </Link>
         <Link href="/portfolio">
           <button className="nav-button">Portfolio</button>
         </Link>

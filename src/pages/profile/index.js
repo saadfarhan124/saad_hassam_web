@@ -2,7 +2,7 @@ import React from "react";
 import Layouts from "../../components/layouts";
 import styles from "../../styles/Profile.module.css";
 import { Col, Row, Typography } from "antd";
-
+import { FaInstagram, FaLinkedin, FaYoutube } from "react-icons/fa";
 const Profile = () => {
   return (
     <Layouts>
@@ -16,27 +16,34 @@ const Profile = () => {
             xl={{ span: 1, offset: 1 }}
             xxl={{ span: 1 }}
           >
-            <div className={styles.imgs}>
-              <img src="/assets/images/insta.png" alt="No Image Found" />
+            <div
+              className={styles.imgs}
+              style={{
+                display: "flex",
+                flexDirection: "column",
+                alignItems: "center",
+              }}
+            >
+              <FaInstagram size={32} color="white" />
               <br />
+              <FaLinkedin size={32} color="white" />
               <br />
-              <img src="/assets/images/linkd.png" alt="No Image Found" />
+              <FaYoutube size={32} color="white" />
               <br />
-              <br />
-              <img src="/assets/images/youtube.png" alt="No Image Found" />
+              <img src="/assets/images/line.png" />
             </div>
           </Col>
           <Col
             sm={1}
             xs={{ span: 1 }}
             md={{ span: 4, offset: 1 }}
-            lg={{ span: 4, offset: 1, pull: 3 }}
-            xl={{ span: 2, offset: 3 }}
+            lg={{ span: 4, offset: 1, pull: 2 }}
+            xl={{ span: 1, offset: 1 }}
             xxl={{ span: 1, pull: 1 }}
           >
             <img
-              height={150}
-              width={150}
+              height={200}
+              width={200}
               src="/assets/images/profile.png"
               className={styles.img}
               alt="No Image Found"
@@ -45,9 +52,9 @@ const Profile = () => {
           <Col
             sm={20}
             xs={{ span: 20 }}
-            md={{ span: 16, offset: 1 }}
-            lg={{ span: 13, offset: 1, pull: 3 }}
-            xl={{ span: 16, offset: 1 }}
+            md={{ span: 13, offset: 1 }}
+            lg={{ span: 12, offset: 1, pull: 2 }}
+            xl={{ span: 14, offset: 0 }}
             xxl={{ span: 17, pull: 1 }}
             style={{
               marginTop: "-2rem",
@@ -65,7 +72,7 @@ const Profile = () => {
               what was possible. Through my career, I never stopped creating
               art, always striving to create something new and unique.
             </p>
-            <br />
+
             <p className={styles.para}>
               My creative journey eventually led me to the world of concept art,
               where I designed characters for local films. I also discovered a

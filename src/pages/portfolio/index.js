@@ -1,5 +1,5 @@
 import React from "react";
-import Layouts from "../layouts";
+import Layouts from "../../components/layouts";
 import Footer from "../footer";
 import { JustifiedGrid } from "@egjs/react-grid";
 import styles from "../../styles/Portfolio.module.css";

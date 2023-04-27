@@ -110,17 +110,18 @@ const Portfolio = () => {
 
                       <Typography.Text className={styles.c4}>
                         This case study describes the successful redesign of a
-                        logistic company's website, including the homepage,
+                        logistic company&apos;s website, including the homepage,
                         service pages, tracking pages, and contact pages. The
-                        redesign aimed to improve the website's functionality,
-                        increase engagement, and ultimately drive more
-                        conversions. The new website includes a tracking system,
-                        an intuitive service page, and a user-friendly contact
-                        page, which have all received positive feedback from
-                        customers. The redesign has resulted in a modern and
-                        functional website that better serves the company's
-                        customers' needs, improving the user experience, and
-                        leading to increased engagement and more conversions.
+                        redesign aimed to improve the website&apos;s
+                        functionality, increase engagement, and ultimately drive
+                        more conversions. The new website includes a tracking
+                        system, an intuitive service page, and a user-friendly
+                        contact page, which have all received positive feedback
+                        from customers. The redesign has resulted in a modern
+                        and functional website that better serves the
+                        company&apos;s customers&apos; needs, improving the user
+                        experience, and leading to increased engagement and more
+                        conversions.
                       </Typography.Text>
                     </div>
                   </div>
@@ -298,17 +299,18 @@ const Portfolio = () => {
 
                       <Typography.Text className={styles.c4}>
                         This case study describes the successful redesign of a
-                        logistic company's website, including the homepage,
+                        logistic company&apos;s website, including the homepage,
                         service pages, tracking pages, and contact pages. The
-                        redesign aimed to improve the website's functionality,
-                        increase engagement, and ultimately drive more
-                        conversions. The new website includes a tracking system,
-                        an intuitive service page, and a user-friendly contact
-                        page, which have all received positive feedback from
-                        customers. The redesign has resulted in a modern and
-                        functional website that better serves the company's
-                        customers' needs, improving the user experience, and
-                        leading to increased engagement and more conversions.
+                        redesign aimed to improve the website&apos;s
+                        functionality, increase engagement, and ultimately drive
+                        more conversions. The new website includes a tracking
+                        system, an intuitive service page, and a user-friendly
+                        contact page, which have all received positive feedback
+                        from customers. The redesign has resulted in a modern
+                        and functional website that better serves the
+                        company&apos;s customers&apos; needs, improving the user
+                        experience, and leading to increased engagement and more
+                        conversions.
                       </Typography.Text>
                     </div>
                   </div>

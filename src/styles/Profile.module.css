@@ -2,8 +2,8 @@
   height: 90vh;
   background-image: url("../../public/assets/images/bg1.png");
   background-repeat: no-repeat;
-  background-size: 70% 70%;
-  background-position: right 30px top 10px;
+  background-size: 70% 55%;
+  background-position: center top 10px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -58,6 +58,11 @@
     }
   }
  @media (max-width: 1440px) {
+  .container {
+   
+    background-position: right top 10px;
+   
+  }
     .imgs {
   margin-top: 2rem;
   
@@ -71,6 +76,12 @@
   }
  
 @media (max-width: 1024px) {
+  .container {
+   
+    background-size: 50% 50%;
+
+   
+  }
     .imgs {
       margin-top: 1rem;
 

@@ -8,9 +8,6 @@ const Layouts = (props) => {
         <Link href="/">
           <button className="nav-button">Home</button>
         </Link>
-        <Link href="/profile">
-          <button className="nav-button">Profile</button>
-        </Link>
         <Link href={"/experience"}>
           <button className="nav-button">Experience</button>
         </Link>

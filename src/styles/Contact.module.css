@@ -48,8 +48,8 @@
   width: 100%;
  }    
  
- .textarea textarea{
-  height: 150px;
+ .textarea input{
+  height: 150px !important;
  }
   .innercontain input {
     height: 50px;
@@ -87,8 +87,8 @@
  
 }
 @media (max-width: 1440px) {
-  .textarea textarea{
-    height: 100px;
+  .textarea input{
+    height: 100px !important;
    }
     .innercontain input {
       height: 40px;

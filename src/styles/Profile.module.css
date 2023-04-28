@@ -48,6 +48,13 @@
  }
  
 @media (max-width: 2560px) {
+
+  .container{
+  
+    background-repeat: no-repeat;
+    background-size: 60% 55%;
+ 
+  }
     .imgs {
   margin-top: 8rem;
     }

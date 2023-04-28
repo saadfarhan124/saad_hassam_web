@@ -9,7 +9,7 @@ const HomePage = () => {
       <div className={styles.container}>
         <Row justify="space-between" className={styles.container1}>
           <Col
-            xs={{ span: 1 }}
+            xs={{ span: 1, offset: 1 }}
             sm={1}
             md={{ span: 1, offset: 1 }}
             lg={{ span: 4, offset: 1 }}
@@ -58,6 +58,7 @@ const HomePage = () => {
             xxl={{ span: 17, pull: 1 }}
             style={{
               marginTop: "-2rem",
+              marginLeft: "0.5rem",
             }}
           >
             <h1 className={styles.title1}>Saad Hassam</h1>

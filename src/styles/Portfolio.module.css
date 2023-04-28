@@ -7,26 +7,44 @@
 
 
  }
+ .misonary::-webkit-scrollbar {display:none;}
 
- .innercontainer {
-   margin: 0 5%;
- }
 
  .misonary {
-   margin-left: 4rem;
+  margin: 0 7%;
    width: 80% !important;
    height: 80vh;
    overflow-y: scroll;
    overflow-x: hidden;
 
  }
+ .innercontainer {
+  margin: 0 10%;
+}
+ 
 
  .container3 {
    height: 80vh;
    width: 100%;
+  margin: 0 7%;
+
+ }
+
+ .container5 {
+   height: 80vh;
+   width: 100%;
+  margin: 0 3%;
+
  }
 
  .container4 {
+  margin: 0 7%;
+   height: 80vh;
+   width: 100%;
+ }
+ .container6 {
+  margin: 0 3%;
+
    height: 80vh;
    width: 100%;
  }
@@ -39,6 +57,7 @@
  .row2 {
    margin-top: 4rem;
    justify-content: space-between;
+   
 
 
  }
@@ -66,25 +85,36 @@
  }
 
  .textbox {
-   height: 650px;
-   width: 650px;
+   height: 630px;
+   width: 1100px;
    background: linear-gradient(to right, #D9D9D9 70%, #F5CB5C 30%);
 
 
 
  }
+ .textclan{
+  width: 40%;
+  text-align: justify;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+ }
 
  .textbox1 {
-   height: 650px;
-   width: 650px;
+   height: fit-content;
+   width: 750px;
    background: #D9D9D9 70%;
-
-
-
+ }
+ .texts1{
+  width: 70%;
+  text-align: justify;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
  }
 
  .texts {
-   width: 65%;
+   width: 40%;
    text-align: justify;
    padding: 5px;
    display: flex;
@@ -103,7 +133,7 @@
  }
 
  .c1 {
-   margin-top: 2rem;
+   margin-top: 1rem;
    font-style: normal;
    font-weight: 700;
    font-size: 32px;
@@ -142,6 +172,52 @@
    color: #000000;
  }
 
+
+
+ 
+ .d1 {
+   margin-top: 1rem;
+   font-style: normal;
+   font-weight: 700;
+   font-size: 32px;
+   line-height: 39px;
+   color: #000000;
+
+ }
+
+ .d2 {
+   font-style: normal;
+   font-weight: 400;
+   font-size: 32px;
+   line-height: 39px;
+   margin-top: 2rem;
+   color: #000000;
+
+ }
+
+ .d3 {
+   color: #4A8CF0;
+   margin-top: 2rem;
+   font-style: normal;
+   font-weight: 400;
+   font-size: 18px;
+   line-height: 22px;
+
+ }
+
+ .d4 {
+
+   font-style: normal;
+   font-weight: 300;
+   margin-top: 2rem;
+   font-size: 16px;
+   line-height: 162.52%;
+   color: #000000;
+ }
+
+
+
+ 
  .secondImage {
    position: absolute;
    bottom: 0;
@@ -154,13 +230,21 @@
    }
 
    .textbox1 {
-     padding: 0.5rem;
+     padding: 0.3rem;
+     height: 450px;
+     width: 700px;
+     margin-top: 3%;
 
    }
-
-   .container4 {
-     margin-left: 4rem;
+   .d4{
+    font-size: 14px;
    }
+   .texts1{
+    width: 82%;
+   }
+    
+
+  
 
  }
 
@@ -168,42 +252,46 @@
 
  @media (max-width: 1440px) {
 
-   .textbox {
-     height: fit-content !important;
-     padding: 0.5rem;
-
-   }
+   
 
    .textbox1 {
-     height: fit-content !important;
+    width: 500px;
+     height: 370px !important;
      padding: 0.5rem;
+ 
 
+   }
+   .texts1{
+    width: 85%;
+    padding: 1rem;
+    
    }
 
 
    .colr1 {
-     width: 220px !important;
-     height: 125px !important;
+     width: 300px !important;
+     height: 150px !important;
    }
 
    .colr2 {
-     width: 220px !important;
-     height: 125px !important;
-     margin-left: -5rem;
+     width: 300px !important;
+     height: 150px !important;
+     margin-left: -3rem;
    }
 
    .firstImage {
-     width: 460px !important;
-     height: 230px !important;
-     margin-left: 2rem;
+     width: 600px !important;
+     height: 300px !important;
 
    }
 
    .row2 {
-     margin-top: -5rem;
-     margin-left: 2rem;
+    margin-top: -10% !important;
+  
 
    }
+
+
 
    .c1 {
 
@@ -229,25 +317,72 @@
      font-size: 13px;
    }
 
+   .d1 {
+    margin-top: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 39px;
+    color: #000000;
+ 
+  }
+ 
+  .d2 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 39px;
+    margin-top: 1rem;
+    color: #000000;
+ 
+  }
+ 
+  .d3 {
+    color: #4A8CF0;
+    margin-top: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 22px;
+ 
+  }
+ 
+  .d4 {
+ 
+    font-style: normal;
+    font-weight: 300;
+    margin-top: 1rem;
+    font-size:12px;
+    line-height: 162.52%;
+    color: #000000;
+  }
+ 
+
    .b1 {
-     width: 230px !important;
-     height: 400px !important;
+     width: 200px !important;
+     height: 450px !important;
    }
 
    .b2 {
-     width: 300px !important;
-     height: 400px !important;
+     width: 320px !important;
+     height: 500px !important;
 
    }
 
    .container {
      overflow-y: hidden;
    }
-
-   .container4 {
-     margin-left: 4rem;
+   .container3{
+    margin: 0  1rem;
    }
-
+.textbox{
+  height: fit-content;
+  width: 800px;
+}
+.texts{
+  width: 53%;
+}
+  
 
 
  }
@@ -261,37 +396,41 @@
  @media (max-width: 1024px) {
    .container3 {
 
-     margin-left: -5rem;
+    margin: 0 1rem;
    }
 
    .container4 {
-     margin-left: 3rem;
+    margin: 0 1rem;
+
 
    }
 
    .container5 {
-     margin-left: -5rem;
+    margin: 0 1rem;
+
    }
 
    .container6 {
-     margin-left: -1rem;
+    margin: 0 1rem;
+
    }
 
    .colr1 {
      width: 200px !important;
-     height: 125px !important;
+     height: 105px !important;
    }
 
    .colr2 {
      width: 200px !important;
-     height: 125px !important;
-     margin-left: 1rem;
+     height: 105px !important;
+     margin-left: 5rem;
    }
 
    .firstImage {
      width: 400px !important;
-     height: 230px !important;
-     margin-left: -10rem;
+     height: 200px !important;
+     margin-left: -1rem;
+
 
    }
 
@@ -299,34 +438,40 @@
 
      font-size: 14px;
    }
+   .d1{
+    padding: 0;
+    font-size: 28px !important;
+   }
 
    .row2 {
      margin-top: -2rem;
-     margin-left: -10rem;
+     margin-left: -1rem;
 
    }
 
    .textbox {
-     height: 550px;
-     width: 450px;
+    height: fit-content;
+     width: 700px;
    }
 
    .textbox1 {
-     height: 550px;
      width: 450px;
-     margin-left: -2rem !important;
+     height: fit-content !important;
 
    }
+   .texts1{
+    width: 70%;
+   }
+   
 
    .b1 {
-     width: 200px !important;
-     height: 400px !important;
+     width: 150px !important;
+     height: 300px !important;
    }
 
    .b2 {
-     width: 250px !important;
-     height: 400px !important;
-     margin-left: 3rem;
+     width: 220px !important;
+     height: 370px !important;
 
    }
 
@@ -337,4 +482,43 @@
 
  @media (max-width: 425px) {}
 
- @media (max-width: 425px) {}
+ @media (max-width: 425px) {
+
+  .overlay{
+    display: none;
+  }
+  .c4{
+    font-size: 12px;
+  }
+  .container3{
+    margin: 0 0;
+  } .container4{
+    margin: 0 0;
+  }  .container5{
+    margin: 0 0;
+  } .container6{
+    margin: 0 0;
+  }.container6{
+    margin: 0 0;
+  }
+  .textbox{
+    width: 270px;
+    height: fit-content;
+  }
+  .texts{
+    width: 90%;
+  }  .textbox1{
+    width: 280px;
+    height: 80vh;
+  }
+  .texts1{
+    width: 90%;
+  }
+  .textclan{
+    width: 265px;
+  }
+  .misonary{
+    height: 100vh;
+  }
+  
+ }

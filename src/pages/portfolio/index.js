@@ -40,13 +40,10 @@ const images4 = ["/assets/images/c1.png", "/assets/images/c2.png"];
 const Portfolio = () => {
   const settings = {
     dots: false,
-
     infinite: true,
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-    centerMode: true,
-    centerPadding: "10%",
     prevArrow: <CustomPrevArrow />,
     nextArrow: <CustomNextArrow />,
   };
@@ -72,6 +69,7 @@ const Portfolio = () => {
   const arrowStyle = {
     position: "absolute",
     top: "50%",
+    left: "-50%",
     transform: "translateY(-50%)",
     zIndex: 1,
     fontSize: 60,
@@ -89,7 +87,7 @@ const Portfolio = () => {
                   xs={24}
                   sm={24}
                   md={16}
-                  lg={16}
+                  lg={12}
                   xl={10}
                   xxl={8}
                   className={styles.col1}
@@ -130,7 +128,7 @@ const Portfolio = () => {
                   xs={24}
                   sm={24}
                   md={8}
-                  lg={8}
+                  lg={7}
                   xl={14}
                   xxl={11}
                   className={styles.col}
@@ -157,9 +155,9 @@ const Portfolio = () => {
                       <Col
                         xs={24}
                         md={10}
-                        lg={{ span: 12, pull: 1 }}
-                        xl={{ span: 12, push: 2 }}
-                        xxl={{ span: 12, push: 4 }}
+                        lg={{ span: 12 }}
+                        xl={{ span: 11 }}
+                        xxl={{ span: 10 }}
                       >
                         <Image
                           className={styles.colr2}
@@ -181,16 +179,16 @@ const Portfolio = () => {
                   xs={24}
                   sm={24}
                   md={8}
-                  lg={8}
-                  xl={8}
-                  xxl={{ span: 8 }}
+                  lg={5}
+                  xl={{ span: 6, push: 0 }}
+                  xxl={{ span: 6, push: 0 }}
                   className={styles.col}
                 >
                   <div className={styles.overlay}>
                     <Image
                       src={images3[0]}
-                      width={300}
-                      height={600}
+                      width={250}
+                      height={500}
                       preview={false}
                       className={styles.b1}
                     />
@@ -200,13 +198,13 @@ const Portfolio = () => {
                   xs={24}
                   sm={24}
                   md={16}
-                  lg={8}
-                  xl={{ span: 9, pull: 2 }}
-                  xxl={8}
+                  lg={11}
+                  xl={{ span: 9, pull: 1 }}
+                  xxl={{ span: 9, pull: 1 }}
                   className={styles.col1}
                 >
                   <div className={styles.textbox1}>
-                    <div className={styles.texts}>
+                    <div className={styles.texts1}>
                       <Typography.Title className={styles.c1}>
                         Behtar App
                       </Typography.Title>
@@ -237,13 +235,13 @@ const Portfolio = () => {
                   md={8}
                   lg={8}
                   xl={4}
-                  xxl={4}
+                  xxl={9}
                   className={styles.col}
                 >
                   <div className={styles.overlay}>
                     <Image
                       src={images3[1]}
-                      width={450}
+                      width={400}
                       height={600}
                       preview={false}
                       className={styles.b2}
@@ -259,16 +257,16 @@ const Portfolio = () => {
                   xs={24}
                   sm={24}
                   md={8}
-                  lg={8}
-                  xl={8}
-                  xxl={{ span: 8 }}
+                  lg={5}
+                  xl={{ span: 6, push: 0 }}
+                  xxl={{ span: 6, push: 0 }}
                   className={styles.col}
                 >
                   <div className={styles.overlay}>
                     <Image
                       src={images4[0]}
-                      width={300}
-                      height={600}
+                      width={250}
+                      height={500}
                       preview={false}
                       className={styles.b1}
                     />
@@ -278,26 +276,25 @@ const Portfolio = () => {
                   xs={24}
                   sm={24}
                   md={16}
-                  lg={8}
-                  xl={{ span: 9, pull: 2 }}
-                  xxl={8}
+                  lg={11}
+                  xl={{ span: 9, pull: 1 }}
+                  xxl={{ span: 9, pull: 1 }}
                   className={styles.col1}
                 >
                   <div className={styles.textbox1}>
-                    <div className={styles.texts}>
-                      <Typography.Title className={styles.c1}>
+                    <div className={styles.texts1}>
+                      <Typography.Title className={styles.d1}>
                         CDL 1000 Dispatch
                       </Typography.Title>
-                      <Typography.Text className={styles.c2}>
+                      <Typography.Text className={styles.d2}>
                         UI/UX Design lead
                       </Typography.Text>
-                      <br />
 
-                      <Typography.Text className={styles.c3}>
+                      <Typography.Text className={styles.d3}>
                         Case Study
                       </Typography.Text>
 
-                      <Typography.Text className={styles.c4}>
+                      <Typography.Text className={styles.d4}>
                         This case study describes the successful redesign of a
                         logistic company&apos;s website, including the homepage,
                         service pages, tracking pages, and contact pages. The
@@ -321,13 +318,13 @@ const Portfolio = () => {
                   md={8}
                   lg={8}
                   xl={4}
-                  xxl={4}
+                  xxl={9}
                   className={styles.col}
                 >
                   <div className={styles.overlay}>
                     <Image
                       src={images4[1]}
-                      width={450}
+                      width={400}
                       height={600}
                       preview={false}
                       className={styles.b2}
@@ -343,13 +340,13 @@ const Portfolio = () => {
                   xs={24}
                   sm={24}
                   md={16}
-                  lg={16}
-                  xl={10}
+                  lg={10}
+                  xl={8}
                   xxl={8}
                   className={styles.col1}
                 >
                   <div className={styles.textbox}>
-                    <div className={styles.texts}>
+                    <div className={styles.textclan}>
                       <Typography.Title className={styles.c1}>
                         Code Clan Web
                       </Typography.Title>
@@ -378,8 +375,8 @@ const Portfolio = () => {
                   xs={24}
                   sm={24}
                   md={8}
-                  lg={8}
-                  xl={14}
+                  lg={7}
+                  xl={13}
                   xxl={11}
                   className={styles.col}
                 >
@@ -407,7 +404,7 @@ const Portfolio = () => {
                         md={10}
                         lg={{ span: 12, pull: 1 }}
                         xl={{ span: 12, push: 2 }}
-                        xxl={{ span: 12, push: 4 }}
+                        xxl={{ span: 12 }}
                       >
                         <Image
                           className={styles.colr2}

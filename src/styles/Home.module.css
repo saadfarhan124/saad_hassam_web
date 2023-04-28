@@ -20,14 +20,12 @@
 }
 
 .title1 {
-  font-family: "Inter" !important;
   font-style: normal !important;
   font-weight: 700;
   font-size: 40px;
   color: #231942;
 }
 .title2 {
-  font-family: "Inter" !important;
   font-style: normal !important;
   font-weight: 400;
   font-size: 40px;
@@ -35,7 +33,6 @@
   color: #ffffff;
 }
 .para {
-  font-family: "Kantumruy";
   text-align: justify;
   font-style: normal;
   font-weight: 300;

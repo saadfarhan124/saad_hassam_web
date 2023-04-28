@@ -2,7 +2,6 @@ import React from "react";
 import styles from "../../styles/Contact.module.css";
 import Layouts from "../../components/layouts";
 import { Button, Col, Input, Row, Typography } from "antd";
-import TextArea from "antd/es/input/TextArea";
 const Contact = () => {
   return (
     <Layouts>
@@ -51,7 +50,7 @@ const Contact = () => {
                   <Input placeholder="Input 2"></Input>
                 </div>
                 <div className={styles.textarea}>
-                  <TextArea placeholder="Input 3"></TextArea>
+                  <Input placeholder="Input 3"></Input>
                 </div>
 
                 <div>

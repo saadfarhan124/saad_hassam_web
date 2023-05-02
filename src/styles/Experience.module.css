@@ -123,15 +123,45 @@ margin-left: 1rem;
 }
 
 @media (max-width: 1024px) {
+  .contain{
+    margin-top: 5rem;
+  
+  
+  }
+
+  .t1{
+
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 2px; 
+      }
+      .t2{
+      margin-top: 2rem;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 2px;
+    
+      }
+      .coltwopara{
+  margin: 0rem 3rem;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 15px;
+  
+          }
 
 }
 
 @media (max-width: 786px) {
+  .contain{
+    margin-top: 9rem;
+  }
 .t1{
 
   font-weight: 700;
-  font-size: 32px;
-  line-height: 15px;
+  font-size: 22px;
+  line-height: 5px;
 
   
   color: #231942;
@@ -139,17 +169,17 @@ margin-left: 1rem;
     .t2{
     margin-top: 2rem;
   font-weight: 400;
-  font-size: 19px;
-  line-height: 15px;
+  font-size: 15px;
+  line-height: 5px;
   
   color: #231942;
     }
     .coltwopara{
-margin: 0rem 3rem;
       font-style: normal;
       font-weight: 400;
       font-size: 15px;
       line-height: 15px;
+      margin-top: 1rem;
 
         }
        
@@ -187,7 +217,21 @@ margin: 0rem 3rem;
       line-height: 14px;
 
         }
-       
+        .bg{
+          display: block;
+        }
+        .navbutton {
+          margin: 0 0;
+          padding: 1px 10px;
+          font-size: 14px;
+        }
+        .contain{
+        margin-top: 5rem;
+      
+      
+      }
+        
+          
 
 
 

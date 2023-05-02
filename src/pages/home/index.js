@@ -1,6 +1,6 @@
 import React from "react";
 import Layouts from "../../components/layouts";
-import styles from "../../styles/Profile.module.css";
+import styles from "../../styles/Home.module.css";
 import { Col, Row, Typography } from "antd";
 import { FaInstagram, FaLinkedin, FaYoutube } from "react-icons/fa";
 const HomePage = () => {
@@ -24,13 +24,13 @@ const HomePage = () => {
                 alignItems: "center",
               }}
             >
-              <FaInstagram size={32} color="white" />
+              <FaInstagram className={styles.icon} size={32} color="white" />
               <br />
-              <FaLinkedin size={32} color="white" />
+              <FaLinkedin className={styles.icon} size={32} color="white" />
               <br />
-              <FaYoutube size={32} color="white" />
+              <FaYoutube className={styles.icon} size={32} color="white" />
               <br />
-              <img src="/assets/images/line.png" />
+              <img className={styles.line} src="/assets/images/line.png" />
             </div>
           </Col>
           <Col

@@ -117,22 +117,53 @@
  
 }
 
-@media (max-width: 786px) {
+@media (max-width: 768px) {
+  .container1 {
+    height: 80vh;
+ background-position: center left 5rem;
  
+  }
+  .innercontain input {
+    height: 35px;
+   }
+  
 }
+ 
 @media (max-width: 425px) {
   .container1 {
-    height: 60vh;
- background-position: center ;
+    height: 50vh;
+ background-position: center  left 2.5rem ;
  
   }
- 
-
+  .textarea input{
+    height: 100px !important;
+   }
+    .innercontain input {
+      height: 35px;
+     }
+    
+     .title{
+      font-size: 19px;
+      line-height: 62px;
+  
+    }
+    .para{
+      font-size: 9px;
+      line-height: 7px;
+    }
+    
 }
-@media (max-width: 325px) {
-  .container1 {
-    height: 60vh;
- background-position: center ;
- 
+@media (max-width: 320px) {
+  .title{
+    font-size: 18px;
+    line-height: 22px;
+
   }
+  .para{
+    font-size: 7px;
+    line-height: 10px;
+  }
+  .innercontain input {
+    height: 30px;
+   }
 }

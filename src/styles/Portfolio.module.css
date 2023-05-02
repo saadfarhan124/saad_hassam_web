@@ -371,7 +371,7 @@
    }
 
    .container {
-     overflow-y: hidden;
+     overflow: hidden;
    }
    .container3{
     margin: 0  1rem;
@@ -395,6 +395,9 @@
  }
 
  @media (max-width: 1024px) {
+  .container{
+    overflow-y: auto;
+  }
    .container3 {
 
     margin: 0 1rem;
@@ -479,47 +482,144 @@
 
  }
 
- @media (max-width: 786px) {}
-
- @media (max-width: 425px) {}
-
- @media (max-width: 425px) {
-
+ @media (min-width:500px ) and (max-width:768px )  {
+  .texts , .texts1 ,.textclan{
+    width: 90%;
+  }
+  .c4,.d4{
+    font-size: 11px;
+  }
+  
   .overlay{
     display: none;
-  }
-  .c4{
-    font-size: 12px;
   }
   .container3{
     margin: 0 0;
   } .container4{
-    margin: 0 0;
+    margin: 0 5px;
   }  .container5{
-    margin: 0 0;
+    margin: 0 5px;
   } .container6{
     margin: 0 0;
   }.container6{
-    margin: 0 0;
+    margin: 0 8px;
   }
+ 
+  .container{
+    overflow-y: scroll;
+  }
+  
+ .textbox ,.textbox1 {
+  width: 500px ;
+  margin-left: 2rem;
+ }
+  
+ }
+
+ @media (max-width: 425px) {}
+
+ @media (max-width: 425px) {
+  
+  .innercontainer{
+    margin: 0 11%;
+  }
+
+  .overlay{
+    display: none;
+  }
+  .c1, .c2, .c3,.d1,.d2,.d3{
+    margin: 0;
+  }
+  .c1 , .c2,.d1,.d2{
+    font-size: 20px !important;
+  }
+  .c4 ,.d4{
+    font-size: 11px;
+  }
+  .container3{
+    margin: 0 0;
+  } .container4{
+    margin: 0 5px;
+  }  .container5{
+    margin: 0 5px;
+  } .container6{
+    margin: 0 0;
+  }.container6{
+    margin: 0 8px;
+  }
+  .container{
+    overflow-y: scroll;
+  }
+  
   .textbox{
-    width: 270px;
-    height: fit-content;
+    width: 265px;
   }
   .texts{
     width: 90%;
   }  .textbox1{
-    width: 280px;
-    height: 80vh;
+    width: 265px;
   }
   .texts1{
     width: 90%;
   }
   .textclan{
     width: 265px;
+    padding: 2px;
   }
   .misonary{
     height: 100vh;
+  }
+  
+  
+ }
+ @media (max-width: 320px) {
+  
+  .innercontainer{
+    margin: 0 13%;
+  }
+
+  .overlay{
+    display: none;
+  }
+
+  .container3{
+    margin: 0 0;
+  } .container4{
+    margin: 0 5px;
+  }  .container5{
+    margin: 0 5px;
+  } .container6{
+    margin: 0 0;
+  }.container6{
+    margin: 0 8px;
+  }
+  
+  .textbox{
+    width: 200px;
+  }
+  .texts{
+    width: 90%;
+  }  .textbox1{
+    width: 200px;
+  }
+  .texts1{
+    width: 90%;
+  }
+  .textclan{
+    width: 200px;
+  }
+  .misonary{
+    height: 100vh;
+  }
+  .c1, .c2, .c3,.d1,.d2,.d3{
+    margin: 0;
+  }
+  .c1 , .c2,.d1,.d2{
+    font-size: 18px !important;
+  }
+  .c4 ,.d4{
+    font-size: 9px;
+   
   }
   
  }

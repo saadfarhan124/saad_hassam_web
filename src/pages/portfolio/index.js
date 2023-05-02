@@ -1,5 +1,5 @@
 import Layouts from "@/components/layouts";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import styles from "../../styles/Portfolio.module.css";
 import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
 import { MdArrowBackIos, MdArrowForwardIos } from "react-icons/md";
@@ -10,15 +10,29 @@ import { Row, Col, Image, Typography } from "antd";
 import Slider from "react-slick";
 
 const images1 = [
-  { url: "/assets/images/1.png", height: "30vh" },
-  { url: "/assets/images/two.png", height: "60vh" },
-  { url: "/assets/images/3.png", height: "60vh" },
-  { url: "/assets/images/4.png", height: "40vh" },
-  { url: "/assets/images/5.png", height: "20vh" },
-  { url: "/assets/images/6.png", height: "60vh" },
-  { url: "/assets/images/7.png", height: "60vh" },
-  { url: "/assets/images/6.png", height: "80vh" },
-  { url: "/assets/images/10.png", height: "67vh" },
+  { url: "/assets/images/1.png" },
+  { url: "/assets/images/3.png" },
+  { url: "/assets/images/5.png" },
+  { url: "/assets/images/6.png" },
+  { url: "/assets/images/6.png" },
+  { url: "/assets/images/7.png" },
+  { url: "/assets/images/6.png" },
+  { url: "/assets/images/6.png" },
+  { url: "/assets/images/6.png" },
+  { url: "/assets/images/6.png" },
+  { url: "/assets/images/1.png" },
+  { url: "/assets/images/1.png" },
+  { url: "/assets/images/3.png" },
+  { url: "/assets/images/5.png" },
+  { url: "/assets/images/6.png" },
+  { url: "/assets/images/6.png" },
+  { url: "/assets/images/6.png" },
+  { url: "/assets/images/6.png" },
+  { url: "/assets/images/4.png" },
+  { url: "/assets/images/10.png" },
+  { url: "/assets/images/1.png" },
+  { url: "/assets/images/3.png" },
+  { url: "/assets/images/5.png" },
 ];
 
 const images = [
@@ -38,9 +52,15 @@ const images3 = ["/assets/images/b1.png", "/assets/images/b2.png"];
 const images4 = ["/assets/images/c1.png", "/assets/images/c2.png"];
 
 const Portfolio = () => {
+  const [scrollTop, setScrollTop] = useState(0);
+
+  const handleScroll = (event) => {
+    setScrollTop(event.target.scrollTop);
+    console.log(scrollTop);
+  };
   const settings = {
     dots: false,
-    infinite: true,
+    infinite: false,
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -49,7 +69,15 @@ const Portfolio = () => {
   };
 
   function CustomPrevArrow(props) {
-    const { className, onClick } = props;
+    const { className, onClick, currentSlide, slideCount } = props;
+
+    const isFirstSlide = currentSlide === 0;
+    if (isFirstSlide) {
+      return null;
+    }
+    if (scrollTop > 20) {
+      return null;
+    }
     return (
       <div className={className}>
         <MdArrowBackIos onClick={onClick} style={{ ...arrowStyle }} />
@@ -58,7 +86,13 @@ const Portfolio = () => {
   }
 
   function CustomNextArrow(props) {
-    const { className, onClick } = props;
+    const { className, onClick, currentSlide, slideCount } = props;
+
+    const isLastSlide = currentSlide === slideCount - 1;
+    if (isLastSlide) {
+      return null;
+    }
+
     return (
       <div className={className}>
         <MdArrowForwardIos onClick={onClick} style={{ ...arrowStyle }} />
@@ -76,6 +110,7 @@ const Portfolio = () => {
     color: "black",
     cursor: "pointer",
   };
+
   return (
     <Layouts>
       <div className={styles.container}>
@@ -86,7 +121,7 @@ const Portfolio = () => {
                 <Col
                   xs={24}
                   sm={24}
-                  md={16}
+                  md={24}
                   lg={12}
                   xl={10}
                   xxl={8}
@@ -178,7 +213,7 @@ const Portfolio = () => {
                 <Col
                   xs={24}
                   sm={24}
-                  md={8}
+                  md={24}
                   lg={5}
                   xl={{ span: 6, push: 0 }}
                   xxl={{ span: 6, push: 0 }}
@@ -256,7 +291,7 @@ const Portfolio = () => {
                 <Col
                   xs={24}
                   sm={24}
-                  md={8}
+                  md={24}
                   lg={5}
                   xl={{ span: 6, push: 0 }}
                   xxl={{ span: 6, push: 0 }}
@@ -339,7 +374,7 @@ const Portfolio = () => {
                 <Col
                   xs={24}
                   sm={24}
-                  md={16}
+                  md={24}
                   lg={10}
                   xl={8}
                   xxl={8}
@@ -420,7 +455,7 @@ const Portfolio = () => {
               </Row>
             </div>
 
-            <div className={styles.misonary}>
+            <div className={styles.misonary} onScroll={handleScroll}>
               <ResponsiveMasonry
                 columnsCountBreakPoints={{
                   320: 1,

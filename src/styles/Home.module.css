@@ -2,8 +2,8 @@
   height: 90vh;
   background-image: url("../../public/assets/images/bg1.png");
   background-repeat: no-repeat;
-  background-size: 70% 70%;
-  background-position: right 30px top 10px;
+  background-size: 70% 55%;
+  background-position: center top 10px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -20,19 +20,20 @@
 }
 
 .title1 {
-  font-style: normal !important;
+ 
   font-weight: 700;
   font-size: 40px;
   color: #231942;
 }
 .title2 {
-  font-style: normal !important;
+ 
   font-weight: 400;
   font-size: 40px;
 
   color: #ffffff;
 }
 .para {
+  font-family: "Kantumruy";
   text-align: justify;
   font-style: normal;
   font-weight: 300;
@@ -45,6 +46,13 @@
  }
  
 @media (max-width: 2560px) {
+
+  .container{
+  
+    background-repeat: no-repeat;
+    background-size: 60% 55%;
+ 
+  }
     .imgs {
   margin-top: 8rem;
     }
@@ -55,6 +63,11 @@
     }
   }
  @media (max-width: 1440px) {
+  .container {
+   
+    background-position: right top 10px;
+   
+  }
     .imgs {
   margin-top: 2rem;
   
@@ -68,6 +81,12 @@
   }
  
 @media (max-width: 1024px) {
+  .container {
+   
+    background-size: 50% 50%;
+
+   
+  }
     .imgs {
       margin-top: 1rem;
 
@@ -77,11 +96,26 @@
     }
   }
  
-@media (max-width: 786px) {
+@media (min-width: 500px)and (max-width: 768px) {
+  .img{
+    height: 150px;
+    width: 150px;
+    margin-top: -10rem;
+  }
+  .icon{
+    width: 30px;
+    height: 30px;
+
+  }
+  .line{
+    height: 50px;
+  }
     .imgs {
   margin-top: 1rem;
     }
     .title1{
+    margin-top: 3rem;
+      
       padding-top: 5px;
       font-size: 30px;
     }
@@ -91,7 +125,7 @@
     }
     .para{
       padding-top: 5px;
-      font-size: 12px;
+      font-size: 11px;
 
     }
     .container {
@@ -102,34 +136,70 @@
    
     }
   }
+
+ 
 @media (max-width: 425px) {
+  .container{
+    background-size: 100% 50%;
+    background-position: center top 15px;
+  }
+ 
     .imgs {
+ 
   margin-top: 3rem;
   margin-left: 1rem;
 
     }
-    .img{
+    .img{    width: 150px;
+      height: 150px;
       margin-top: -10rem;
     }
     .title1{
       padding-top: 3rem;
-      font-size: 30px;
+      font-size: 26px;
     }
      .title2{
       padding-top: 1px;
-      font-size: 30px;
+      font-size: 26px;
     }
     .para{
       padding-top: 5px;
-      font-size: 15px;
+      font-size: 11px;
 
+    }
+    .icon{
+      width: 28px;
+      height: 28px;
+ 
+    }
+    .line{
+      height: 50px;
     }
  
   }
-@media (max-width: 425px) {
+
+ 
+@media (max-width: 320px) {
+
+  .title1{
+    padding-top: 3rem;
+    font-size: 22px;
+  }
+   .title2{
+    padding-top: 1px;
+    font-size: 22px;
+  }
   .para{
     padding-top: 5px;
-    font-size: 12px;
+    font-size: 10px;
+  }
+  .icon{
+    width: 25px;
+    height: 25px;
 
   }
+  .line{
+    height: 40px;
+  }
+
 }

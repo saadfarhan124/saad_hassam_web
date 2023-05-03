@@ -36,9 +36,9 @@
 position: absolute;
 bottom: 0;
 right: 0;
-margin-bottom: 10px;
-margin-right: 10%;
-background-image: url('../../public/assets/images/eclipse.png') ;
+margin-bottom: 4rem;
+margin-right: 5rem;
+background-image: url('../../public/assets/images/message.png') ;
 background-repeat: no-repeat;
 background-size: contain; 
  
@@ -48,12 +48,39 @@ background-size: contain;
   display: none;
   }
   
+  @media screen and (max-width: 2560px) {
+    .footer-img{
+      height: 65px;
+      width: 65px;
+    margin-bottom: 4rem;
+    margin-right: 3rem;
+     }
+  }    
+  @media screen and (max-width: 1440px) {
+    .footer-img{
+ 
+    margin-bottom: 2rem;
+    margin-right: 1rem;
+     }
+
+  
+  }   
+  @media screen and (max-width: 1024px) {
+    
+  
+  }  
   @media screen and (max-width: 768px) {
     .nav-button {
       margin: 0 3px;
       padding: 5px 5px;
       font-size: 16px; 
     }
+    .footer-img{
+      height: 45px;
+      width: 45px;
+    margin-bottom: 1rem;
+    margin-right: 1rem;
+     }
   }
   @media screen and (max-width: 425px) {
     .navbar{
@@ -65,4 +92,19 @@ background-size: contain;
       padding: 1px 5px;
       font-size: 14px; 
     }
+    .footer-img{
+      height: 35px;
+      width: 35px;
+    margin-bottom: 1rem;
+    margin-right: 1rem;
+     }
+  }
+  @media screen and (max-width: 320px) {
+    .footer-img{
+      height: 35px;
+      width: 35px;
+    margin-bottom: 1rem;
+    margin-right: 1rem;
+     }
+  
   }

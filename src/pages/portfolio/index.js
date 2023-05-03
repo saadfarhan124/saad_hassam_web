@@ -8,6 +8,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { Row, Col, Image, Typography } from "antd";
 import Slider from "react-slick";
+import Footer from "../footer";
 
 const images1 = [
   { url: "/assets/images/1.png" },
@@ -37,13 +38,13 @@ const images1 = [
 
 const images = [
   "/assets/images/p1.png",
-  "/assets/images/p2.png",
+  "/assets/images/cdl.png",
   "/assets/images/p3.png",
   "/assets/images/p4.png",
 ];
 
 const images2 = [
-  "/assets/images/q1.png",
+  "/assets/images/clan.png",
   "/assets/images/q2.png",
   "/assets/images/q3.png",
 ];
@@ -171,13 +172,13 @@ const Portfolio = () => {
                   <div className={styles.overlay}>
                     <Image
                       src={images[1]}
-                      width={800}
-                      height={400}
+                      width={850}
+                      height={670}
                       preview={false}
                       className={styles.firstImage}
                     />
 
-                    <Row className={styles.row2}>
+                    {/* <Row className={styles.row2}>
                       <Col xs={24} md={10} lg={12} xl={{ span: 12 }} xxl={12}>
                         <Image
                           className={styles.colr1}
@@ -202,7 +203,7 @@ const Portfolio = () => {
                           preview={false}
                         />
                       </Col>
-                    </Row>
+                    </Row> */}
                   </div>
                 </Col>
               </Row>
@@ -216,7 +217,7 @@ const Portfolio = () => {
                   md={24}
                   lg={5}
                   xl={{ span: 6, push: 0 }}
-                  xxl={{ span: 6, push: 0 }}
+                  xxl={{ span: 6 }}
                   className={styles.col}
                 >
                   <div className={styles.overlay}>
@@ -235,7 +236,7 @@ const Portfolio = () => {
                   md={16}
                   lg={11}
                   xl={{ span: 9, pull: 1 }}
-                  xxl={{ span: 9, pull: 1 }}
+                  xxl={{ span: 9, pull: 0 }}
                   className={styles.col1}
                 >
                   <div className={styles.textbox1}>
@@ -270,7 +271,7 @@ const Portfolio = () => {
                   md={8}
                   lg={8}
                   xl={4}
-                  xxl={9}
+                  xxl={{ span: 9, pullL: 2 }}
                   className={styles.col}
                 >
                   <div className={styles.overlay}>
@@ -293,8 +294,8 @@ const Portfolio = () => {
                   sm={24}
                   md={24}
                   lg={5}
-                  xl={{ span: 6, push: 0 }}
-                  xxl={{ span: 6, push: 0 }}
+                  xl={{ span: 6 }}
+                  xxl={{ span: 6, push: 1 }}
                   className={styles.col}
                 >
                   <div className={styles.overlay}>
@@ -313,7 +314,7 @@ const Portfolio = () => {
                   md={16}
                   lg={11}
                   xl={{ span: 9, pull: 1 }}
-                  xxl={{ span: 9, pull: 1 }}
+                  xxl={{ span: 9, pull: 0 }}
                   className={styles.col1}
                 >
                   <div className={styles.textbox1}>
@@ -353,7 +354,7 @@ const Portfolio = () => {
                   md={8}
                   lg={8}
                   xl={4}
-                  xxl={9}
+                  xxl={{ span: 9, pull: 2 }}
                   className={styles.col}
                 >
                   <div className={styles.overlay}>
@@ -380,7 +381,7 @@ const Portfolio = () => {
                   xxl={8}
                   className={styles.col1}
                 >
-                  <div className={styles.textbox}>
+                  <div className={styles.clanbox}>
                     <div className={styles.textclan}>
                       <Typography.Title className={styles.c1}>
                         Code Clan Web
@@ -418,19 +419,19 @@ const Portfolio = () => {
                   <div className={styles.overlay}>
                     <Image
                       src={images2[0]}
-                      width={700}
-                      height={400}
+                      width={600}
+                      height={623}
                       preview={false}
-                      className={styles.firstImage}
+                      className={styles.clanImage}
                     />
 
-                    <Row className={styles.row2}>
+                    {/* <Row className={styles.row2}>
                       <Col xs={24} md={10} lg={12} xl={{ span: 12 }} xxl={12}>
                         <Image
                           className={styles.colr1}
                           src={images2[1]}
-                          width={300}
-                          height={200}
+                          width={400}
+                          height={250}
                           preview={false}
                         />
                       </Col>
@@ -444,12 +445,12 @@ const Portfolio = () => {
                         <Image
                           className={styles.colr2}
                           src={images2[2]}
-                          width={300}
+                          width={400}
                           height={200}
                           preview={false}
                         />
                       </Col>
-                    </Row>
+                    </Row> */}
                   </div>
                 </Col>
               </Row>
@@ -488,6 +489,7 @@ const Portfolio = () => {
           </Slider>
         </div>
       </div>
+      <Footer />
     </Layouts>
   );
 };

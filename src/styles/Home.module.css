@@ -2,7 +2,7 @@
   height: 90vh;
   background-image: url("../../public/assets/images/bg1.png");
   background-repeat: no-repeat;
-  background-size: 70% 55%;
+  background-size: 55% 55%;
   background-position: center top 10px;
   display: flex;
   justify-content: center;
@@ -50,7 +50,7 @@
   .container{
   
     background-repeat: no-repeat;
-    background-size: 60% 55%;
+    background-size: 55% 55%;
  
   }
     .imgs {

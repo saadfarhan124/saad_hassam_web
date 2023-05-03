@@ -3,6 +3,7 @@ import Layouts from "../../components/layouts";
 import styles from "../../styles/Home.module.css";
 import { Col, Row, Typography } from "antd";
 import { FaInstagram, FaLinkedin, FaYoutube } from "react-icons/fa";
+import Footer from "../footer";
 const HomePage = () => {
   return (
     <Layouts>
@@ -84,6 +85,7 @@ const HomePage = () => {
           </Col>
         </Row>
       </div>
+      <Footer />
     </Layouts>
   );
 };

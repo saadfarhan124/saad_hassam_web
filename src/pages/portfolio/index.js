@@ -8,6 +8,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { Row, Col, Image, Typography } from "antd";
 import Slider from "react-slick";
+import Footer from "../footer";
 
 const images1 = [
   { url: "/assets/images/1.png" },
@@ -488,6 +489,7 @@ const Portfolio = () => {
           </Slider>
         </div>
       </div>
+      <Footer />
     </Layouts>
   );
 };

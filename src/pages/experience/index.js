@@ -2,6 +2,7 @@ import { Col, Row, Typography } from "antd";
 import React from "react";
 import styles from "../../styles/Experience.module.css";
 import Link from "next/link";
+import Footer from "../footer";
 const Experience = () => {
   return (
     <>
@@ -115,8 +116,8 @@ const Experience = () => {
             </Col>
           </Row>
         </div>
+        <Footer />;
       </div>
-      ;
     </>
   );
 };

@@ -144,7 +144,7 @@
 
  .c1 {
    margin-top: 1rem;
-   font-style: normal;
+    
    font-weight: 700;
    font-size: 32px;
    line-height: 39px;
@@ -153,7 +153,7 @@
  }
 
  .c2 {
-   font-style: normal;
+    
    font-weight: 400;
    font-size: 32px;
    line-height: 39px;
@@ -165,7 +165,7 @@
  .c3 {
    color: #4A8CF0;
    margin-top: 2rem;
-   font-style: normal;
+    
    font-weight: 400;
    font-size: 18px;
    line-height: 22px;
@@ -174,7 +174,7 @@
 
  .c4 {
 
-   font-style: normal;
+    
    font-weight: 300;
    margin-top: 2rem;
    font-size: 16px;
@@ -188,7 +188,7 @@
  
  .d1 {
    margin-top: 1rem;
-   font-style: normal;
+    
    font-weight: 700;
    font-size: 32px;
    line-height: 39px;
@@ -197,7 +197,7 @@
  }
 
  .d2 {
-   font-style: normal;
+    
    font-weight: 400;
    font-size: 32px;
    line-height: 39px;
@@ -209,7 +209,7 @@
  .d3 {
    color: #4A8CF0;
    margin-top: 2rem;
-   font-style: normal;
+    
    font-weight: 400;
    font-size: 18px;
    line-height: 22px;
@@ -218,7 +218,7 @@
 
  .d4 {
 
-   font-style: normal;
+    
    font-weight: 300;
    margin-top: 2rem;
    font-size: 16px;
@@ -345,7 +345,7 @@
 
    .d1 {
     margin-top: 1rem;
-    font-style: normal;
+     
     font-weight: 700;
     font-size: 22px;
     line-height: 39px;
@@ -354,7 +354,7 @@
   }
  
   .d2 {
-    font-style: normal;
+     
     font-weight: 400;
     font-size: 22px;
     line-height: 39px;
@@ -366,7 +366,7 @@
   .d3 {
     color: #4A8CF0;
     margin-top: 1rem;
-    font-style: normal;
+     
     font-weight: 400;
     font-size: 12px;
     line-height: 22px;
@@ -375,7 +375,7 @@
  
   .d4 {
  
-    font-style: normal;
+     
     font-weight: 300;
     margin-top: 1rem;
     font-size:12px;
@@ -482,7 +482,7 @@
 
    .c4 {
 
-     font-size: 14px;
+     font-size: 12px;
    }
    .d1{
     padding: 0;

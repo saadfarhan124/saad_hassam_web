@@ -25,11 +25,11 @@ const HomePage = () => {
                 alignItems: "center",
               }}
             >
-              <FaInstagram className={styles.icon} size={32} color="white" />
+              <FaInstagram className={styles.icon} size={30} color="white" />
               <br />
-              <FaLinkedin className={styles.icon} size={32} color="white" />
+              <FaLinkedin className={styles.icon} size={30} color="white" />
               <br />
-              <FaYoutube className={styles.icon} size={32} color="white" />
+              <FaYoutube className={styles.icon} size={30} color="white" />
               <br />
               <img className={styles.line} src="/assets/images/line.png" />
             </div>

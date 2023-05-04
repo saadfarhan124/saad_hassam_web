@@ -61,6 +61,13 @@ const images4 = ["/assets/images/c1.png", "/assets/images/c2.png"];
 const Portfolio = () => {
   const [scrollTop, setScrollTop] = useState(0);
 
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  const handleScrollClick = () => {
+    window.scrollTo({ top: window.innerHeight * 3.1, behavior: "smooth" });
+    setIsScrolled(true);
+  };
+
   const handleScroll = (event) => {
     setScrollTop(event.target.scrollTop);
     console.log(scrollTop);
@@ -95,7 +102,7 @@ const Portfolio = () => {
   function CustomNextArrow(props) {
     const { className, onClick, currentSlide, slideCount } = props;
 
-    const isLastSlide = currentSlide === slideCount - 1;
+    const isLastSlide = currentSlide === slideCount - 2;
     if (isLastSlide) {
       return null;
     }
@@ -490,6 +497,15 @@ const Portfolio = () => {
             </ResponsiveMasonry>
           </div>
         </Slider>
+        <div className={styles.downarrow}>
+          <MdArrowBackIos
+            onClick={handleScrollClick}
+            size={60}
+            style={{
+              transform: isScrolled ? "rotate(270deg)" : "rotate(270deg)",
+            }}
+          />
+        </div>
       </div>
     </div>
   );

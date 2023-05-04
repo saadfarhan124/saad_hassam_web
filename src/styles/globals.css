@@ -8,13 +8,21 @@
 }
 
 .navbar {
+  height: 10vh;
+  margin-top: -8vh;
+  position: fixed;
   display: flex;
   justify-content: center;
-  align-items: center;
-  height: 10vh;
-  
+  align-items: start;
+  width: 100%;
+  z-index: 1000;
+  background-color:  transparent;
  
+
 }
+ 
+ 
+ 
 
 .nav-button {
   margin: 0 5px;
@@ -86,7 +94,6 @@ background-size: contain;
   }
   @media screen and (max-width: 425px) {
     .navbar{
-      margin-top: 1rem;
       height: fit-content;
     }
     .nav-button {
@@ -108,5 +115,12 @@ background-size: contain;
     margin-bottom: 1rem;
     margin-right: 1rem;
      }
+     .navbar {
+      margin-top: none !important;
+      height: 2vh !important;
+     
+    
+    }
+ 
   
   }

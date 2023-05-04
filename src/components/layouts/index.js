@@ -1,22 +1,43 @@
 import Link from "next/link";
 import React from "react";
+import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
 
 const Layouts = (props) => {
   return (
     <div>
       <div className="navbar">
-        <Link href="/">
-          <button className="nav-button">Home</button>
-        </Link>
-        <Link href={"/experience"}>
-          <button className="nav-button">Experience</button>
-        </Link>
-        <Link href="/portfolio">
-          <button className="nav-button">Portfolio</button>
-        </Link>
-        <Link href="/contact">
-          <button className="nav-button">Contact</button>
-        </Link>
+        <ScrollLink
+          to="home"
+          smooth={true}
+          duration={500}
+          className="nav-button"
+        >
+          Home
+        </ScrollLink>
+        <ScrollLink
+          to="experience"
+          smooth={true}
+          duration={500}
+          className="nav-button"
+        >
+          Experience
+        </ScrollLink>
+        <ScrollLink
+          to="portfolio"
+          smooth={true}
+          duration={500}
+          className="nav-button"
+        >
+          Portfolio
+        </ScrollLink>
+        <ScrollLink
+          to="contact"
+          smooth={true}
+          duration={500}
+          className="nav-button"
+        >
+          Contact
+        </ScrollLink>
       </div>
       {props.children}
     </div>

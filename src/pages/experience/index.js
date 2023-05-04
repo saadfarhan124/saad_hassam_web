@@ -6,7 +6,7 @@ import Footer from "../footer";
 const Experience = () => {
   return (
     <>
-      <div className={styles.navbar}>
+      {/* <div className={styles.navbar}>
         <Link href="/">
           <button className={styles.navbutton}>Home</button>
         </Link>
@@ -19,7 +19,7 @@ const Experience = () => {
         <Link href="/contact">
           <button className={styles.navbutton}>Contact</button>
         </Link>
-      </div>
+      </div> */}
       <div className={styles.bg}>
         <div className={styles.contain}>
           <Row className={styles.row}>

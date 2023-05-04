@@ -1,6 +1,5 @@
 .container {
-  margin-top: 10vh;
-  height: 90vh;
+  height: 100vh;
   background-image: url("../../public/assets/images/bg1.png");
   background-repeat: no-repeat;
   background-size: 55% 55%;
@@ -51,7 +50,7 @@
   
     background-repeat: no-repeat;
     background-size: 50% 55%;
-    background-position: top right;
+    background-position: top 6vh  right ;
  
   }
   .title1 , .title2{
@@ -81,7 +80,7 @@
   
     background-repeat: no-repeat;
     background-size: 50% 55%;
-    background-position: top right;
+    background-position: top 6vh right;
  
   }
   .title1 , .title2{
@@ -109,7 +108,7 @@
  @media (max-width: 1440px) {
   .container {
    
-    background-position: right top 10px;
+    background-position: right top 5vh;
    
   }
     .imgs {
@@ -130,6 +129,7 @@
     }
    
     .img{
+      margin-top: -7rem;
       height: 200px;
       width: 200px;
     }
@@ -149,7 +149,7 @@
 @media (max-width: 1024px) {
   .container {
    
-    background-size: 50% 50%;
+    background-size: 55% 50%;
 
    
   }
@@ -218,7 +218,7 @@
 @media (max-width: 425px) {
   .container{
     background-size: 90% 30%;
-    background-position: center top 5rem;
+    background-position: center top 23vh;
   }
  
     .imgs {
@@ -263,6 +263,9 @@
     font-size: 7px; 
 
   }
+ 
+  
+ 
 }
 @media (max-width: 320px) {
   

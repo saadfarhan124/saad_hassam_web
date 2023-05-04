@@ -4,9 +4,15 @@
    background-repeat: no-repeat;
    background-size: 100% 50%;
    background-position: center bottom 1rem;
-   height: 90vh;
+   height: 100vh;
 
 
+ }
+ .slider{
+  display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    height: 100vh;
  }
  .misonary::-webkit-scrollbar {display:none;}
 
@@ -21,14 +27,10 @@
 
  }
  .innercontainer {
+ 
   align-items: center;
-
   margin: 0 10%;
   text-align: center;
-
-
-
-  
  
  }
 
@@ -266,10 +268,9 @@
  @media (max-width: 2000px) {}
 
  @media (max-width: 1440px) {
-  .innercontainer{
-    margin-top: -2rem ;
+  .slider{
+    margin-top: 6rem;
   }
-
    .clanImage{
     width: 500px !important;
     height: 450px !important;
@@ -639,6 +640,7 @@
   
   .textbox,.clanbox{
     width: 200px;
+    height: 70vh;
   }
   .texts{
     width: 90%;

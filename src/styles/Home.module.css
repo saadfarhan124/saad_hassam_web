@@ -1,4 +1,5 @@
 .container {
+  margin-top: 10vh;
   height: 90vh;
   background-image: url("../../public/assets/images/bg1.png");
   background-repeat: no-repeat;
@@ -10,6 +11,7 @@
   position: relative;
 }
 .container1 {
+  
   background-image: url("../../public/assets/images/bg2.png");
   background-repeat: no-repeat;
   background-size: 100% 100%;
@@ -161,11 +163,11 @@
 
     }
     .title1,.title2{
-      font-size: 2rem;
+      font-size: 1.5rem;
 
     }
     .para{
-      font-size: 12px;
+      font-size: 11px;
     }
     .icon{
       width: 25px ;
@@ -192,9 +194,7 @@
   margin-top: 1rem;
     }
     .title1{
-    margin-top: 1rem;
       
-      padding-top: 2px;
       font-size: 25px;
     }
      .title2{
@@ -202,7 +202,7 @@
     }
     .para{
       padding-top: 5px;
-      font-size: 10.5px;
+      font-size: 9px;
 
     }
     .container {
@@ -218,7 +218,7 @@
 @media (max-width: 425px) {
   .container{
     background-size: 90% 30%;
-    background-position: center top 6rem;
+    background-position: center top 5rem;
   }
  
     .imgs {
@@ -230,6 +230,7 @@
     .img{    width: 100px;
       height: 100px;
       margin-top: -10rem;
+      margin-left: -1rem;
     }
     .title1{
       padding-top: 3rem;
@@ -256,8 +257,15 @@
  
   }
 
- 
+@media (max-width: 375px) {
+  .para{
+    padding-top: 5px;
+    font-size: 7px; 
+
+  }
+}
 @media (max-width: 320px) {
+  
 
   .title1{
     padding-top: 3rem;

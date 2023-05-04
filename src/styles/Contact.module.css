@@ -1,14 +1,17 @@
  
 .container1 {
-    height: 85vh;
+    height: 90vh;
+    margin-top: 10vh;
     background-image: url('../../public/assets/images/r5.png') ;
     background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-size: 100% 90%;
  background-position: top 2rem  left 5rem ;
  
   }
   .container2{
-    height: 35vh;
+ 
+margin-top: 12vh;
+    height: 45vh;
     width: 85%;
     margin-left: 2rem;
 
@@ -16,7 +19,9 @@
   }
   
   .container3 {
-    height: 55vh;
+ 
+
+    height: 50vh;
     background-image: url('../../public/assets/images/r4.png');
     background-repeat: no-repeat;
     background-size: 90% 90%;
@@ -104,6 +109,9 @@
     .para{
       font-size: 15px;
       line-height: 17px;
+    }
+    .container3{
+      margin-top: -3rem;
     }
     
  

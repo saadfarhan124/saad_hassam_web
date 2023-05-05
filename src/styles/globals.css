@@ -47,7 +47,7 @@ bottom: 0;
 right: 0;
 margin-bottom: 4rem;
 margin-right: 5rem;
-background-image: url('../../public/assets/images/message.png') ;
+background-image: url('/assets/images/message.png') ;
 background-repeat: no-repeat;
 background-size: contain; 
  

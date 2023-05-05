@@ -1,20 +1,13 @@
-import Layouts from "@/components/layouts";
 import React, { useEffect, useState } from "react";
 import styles from "../../styles/Portfolio.module.css";
 import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
-import {
-  MdArrowBackIos,
-  MdArrowDropDown,
-  MdArrowForwardIos,
-} from "react-icons/md";
+import { MdArrowBackIos, MdArrowForwardIos } from "react-icons/md";
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { Row, Col, Image, Typography } from "antd";
 import Slider from "react-slick";
 import Footer from "../footer";
-import { FaAirbnb } from "react-icons/fa";
-import { ScrollLink } from "react-scroll";
 
 const images1 = [
   { url: "/assets/images/1.png" },
@@ -188,33 +181,6 @@ const Portfolio = () => {
                     preview={false}
                     className={styles.firstImage}
                   />
-
-                  {/* <Row className={styles.row2}>
-                      <Col xs={24} md={10} lg={12} xl={{ span: 12 }} xxl={12}>
-                        <Image
-                          className={styles.colr1}
-                          src={images[2]}
-                          width={400}
-                          height={200}
-                          preview={false}
-                        />
-                      </Col>
-                      <Col
-                        xs={24}
-                        md={10}
-                        lg={{ span: 12 }}
-                        xl={{ span: 11 }}
-                        xxl={{ span: 10 }}
-                      >
-                        <Image
-                          className={styles.colr2}
-                          src={images[3]}
-                          width={400}
-                          height={200}
-                          preview={false}
-                        />
-                      </Col>
-                    </Row> */}
                 </div>
               </Col>
             </Row>
@@ -434,33 +400,6 @@ const Portfolio = () => {
                     preview={false}
                     className={styles.clanImage}
                   />
-
-                  {/* <Row className={styles.row2}>
-                      <Col xs={24} md={10} lg={12} xl={{ span: 12 }} xxl={12}>
-                        <Image
-                          className={styles.colr1}
-                          src={images2[1]}
-                          width={400}
-                          height={250}
-                          preview={false}
-                        />
-                      </Col>
-                      <Col
-                        xs={24}
-                        md={10}
-                        lg={{ span: 12, pull: 1 }}
-                        xl={{ span: 12, push: 2 }}
-                        xxl={{ span: 12 }}
-                      >
-                        <Image
-                          className={styles.colr2}
-                          src={images2[2]}
-                          width={400}
-                          height={200}
-                          preview={false}
-                        />
-                      </Col>
-                    </Row> */}
                 </div>
               </Col>
             </Row>
@@ -507,6 +446,7 @@ const Portfolio = () => {
           />
         </div>
       </div>
+      <Footer />
     </div>
   );
 };

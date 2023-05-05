@@ -1,10 +1,9 @@
 import React from "react";
 import styles from "../../styles/Contact.module.css";
-import Layouts from "../../components/layouts";
 import { Button, Col, Input, Row, Typography } from "antd";
 const Contact = () => {
   return (
-    <div>
+    <div id="contact">
       <Row>
         <Col xs={24} sm={24} lg={12} xl={12} xxl={14}>
           <div className={styles.container1}></div>

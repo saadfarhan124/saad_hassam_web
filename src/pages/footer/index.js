@@ -1,9 +1,11 @@
 import React from "react";
-
+import { Link } from "react-scroll";
 const Footer = () => {
   return (
     <footer className="footer">
-      <div className="footer-img" />
+      <Link to="contact" smooth={true} duration={500}>
+        <div className="footer-img" />
+      </Link>
     </footer>
   );
 };

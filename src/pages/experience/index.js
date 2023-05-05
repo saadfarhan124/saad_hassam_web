@@ -1,25 +1,10 @@
 import { Col, Row, Typography } from "antd";
 import React from "react";
 import styles from "../../styles/Experience.module.css";
-import Link from "next/link";
 import Footer from "../footer";
 const Experience = () => {
   return (
     <>
-      {/* <div className={styles.navbar}>
-        <Link href="/">
-          <button className={styles.navbutton}>Home</button>
-        </Link>
-        <Link href={"/experience"}>
-          <button className={styles.navbutton}>Experience</button>
-        </Link>
-        <Link href="/portfolio">
-          <button className={styles.navbutton}>Portfolio</button>
-        </Link>
-        <Link href="/contact">
-          <button className={styles.navbutton}>Contact</button>
-        </Link>
-      </div> */}
       <div className={styles.bg}>
         <div className={styles.contain}>
           <Row className={styles.row}>

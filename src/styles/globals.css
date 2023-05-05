@@ -13,7 +13,6 @@
   position: fixed;
   display: flex;
   justify-content: center;
-  align-items: start;
   width: 100%;
   z-index: 1000;
   background-color:  transparent;
@@ -53,6 +52,8 @@ background-repeat: no-repeat;
 background-size: contain; 
  
  }
+
+  
  
   .slick-prev:before, .slick-next:before {
   display: none;
@@ -95,6 +96,7 @@ background-size: contain;
   @media screen and (max-width: 425px) {
     .navbar{
       height: fit-content;
+      margin-top: 1rem;
     }
     .nav-button {
       margin: 0 5px;

@@ -1,6 +1,6 @@
 import React from "react";
-import styles from "../../styles/Contact.module.css";
 import { Button, Col, Input, Row, Typography } from "antd";
+import styles from "../../styles/Contact.module.css";
 const Contact = () => {
   return (
     <div id="contact">

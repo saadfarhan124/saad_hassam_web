@@ -1,7 +1,7 @@
 import { Col, Row, Typography } from "antd";
 import React from "react";
-import styles from "../../styles/Experience.module.css";
 import Footer from "../footer";
+import styles from "../../styles/Experience.module.css";
 const Experience = () => {
   return (
     <>

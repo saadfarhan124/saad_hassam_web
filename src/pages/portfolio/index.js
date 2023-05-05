@@ -2,12 +2,11 @@ import React, { useEffect, useState } from "react";
 import styles from "../../styles/Portfolio.module.css";
 import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
 import { MdArrowBackIos, MdArrowForwardIos } from "react-icons/md";
-
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { Row, Col, Image, Typography } from "antd";
-import Slider from "react-slick";
 import Footer from "../footer";
+import Slider from "react-slick";
 
 const images1 = [
   { url: "/assets/images/1.png" },

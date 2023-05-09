@@ -1,7 +1,46 @@
-import React from "react";
-import { Button, Col, Input, Row, Typography } from "antd";
+import React, { useState } from "react";
+import { Button, Col, Form, Input, Row, Typography } from "antd";
+import emailjs from "emailjs-com";
 import styles from "../../styles/Contact.module.css";
 const Contact = () => {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [subject, setSubject] = useState("");
+  const [message, setMessage] = useState("");
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    sendEmail(name, email, subject, message);
+    setName("");
+    setEmail("");
+    setSubject("");
+    setMessage("");
+  };
+
+  const sendEmail = (name, email, subject, message) => {
+    const templateParams = {
+      name: name,
+      email: email,
+      subject: subject,
+      message: message,
+    };
+
+    emailjs
+      .send(
+        "service_rgp72w3",
+        "template_083138l",
+        templateParams,
+        "VYj7rWlWm9vXK1NHp"
+      )
+      .then(
+        (response) => {
+          console.log("SUCCESS!", response.status, response.text);
+        },
+        (err) => {
+          console.log("FAILED...", err);
+        }
+      );
+  };
+
   return (
     <div id="contact">
       <Row>
@@ -31,28 +70,49 @@ const Contact = () => {
               forward to hearing from you soon!
             </Typography.Text>
           </div>
+
           <div className={styles.container3}>
             <div className={styles.innercontain}>
               <div>
                 <Row className={styles.row1}>
                   <Col span={11}>
-                    <Input placeholder="Input 1"></Input>
+                    <Input
+                      value={name}
+                      onChange={(e) => setName(e.target.value)}
+                      placeholder="Name"
+                    ></Input>
                   </Col>
 
                   <Col span={11}>
-                    <Input placeholder="Input 1"></Input>
+                    <Input
+                      type="email"
+                      value={email}
+                      onChange={(e) => setEmail(e.target.value)}
+                      placeholder="Email"
+                    ></Input>
                   </Col>
                 </Row>
               </div>
               <div className={styles.inputWrapper}>
-                <Input placeholder="Input 2"></Input>
+                <Input
+                  value={subject}
+                  onChange={(e) => setSubject(e.target.value)}
+                  placeholder="Subject"
+                ></Input>
               </div>
               <div className={styles.textarea}>
-                <Input placeholder="Input 3"></Input>
+                <Input.TextArea
+                  value={message}
+                  onChange={(e) => setMessage(e.target.value)}
+                  placeholder="Message"
+                  rows={3}
+                ></Input.TextArea>
               </div>
 
               <div>
-                <Button className={styles.btn}>Submit</Button>
+                <Button onClick={handleSubmit} className={styles.btn}>
+                  Submit
+                </Button>
               </div>
             </div>
           </div>

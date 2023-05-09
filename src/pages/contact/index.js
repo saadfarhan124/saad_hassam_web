@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { Button, Col, Form, Input, Row, Typography } from "antd";
 import emailjs from "emailjs-com";
 import styles from "../../styles/Contact.module.css";
-import TextArea from "antd/es/input/TextArea";
 const Contact = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -98,17 +97,16 @@ const Contact = () => {
                 <Input
                   value={subject}
                   onChange={(e) => setSubject(e.target.value)}
-                  placeholder="Short Message"
+                  placeholder="Subject"
                 ></Input>
               </div>
               <div className={styles.textarea}>
-                <TextArea
+                <Input.TextArea
                   value={message}
                   onChange={(e) => setMessage(e.target.value)}
-                  placeholder="Long Message"
-                  multiline
-                  rows={4}
-                ></TextArea>
+                  placeholder="Message"
+                  rows={3}
+                ></Input.TextArea>
               </div>
 
               <div>

@@ -53,9 +53,10 @@ margin-top: 12vh;
   width: 100%;
  }    
  
- .textarea input{
+ /* .textarea input{
   height: 150px !important;
- }
+  vertical-align: top !important;
+ } */
   .innercontain input {
     height: 50px;
    }
@@ -93,6 +94,7 @@ margin-top: 12vh;
 }
 @media (max-width: 1440px) {
   .textarea input{
+    vertical-align: top !important;
     height: 100px !important;
    }
     .innercontain input {

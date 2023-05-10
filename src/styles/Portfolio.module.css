@@ -17,6 +17,7 @@
  .downarrow{
   text-align: center;
   margin-top: -5rem;
+  cursor: pointer;
  
  }
  .misonary::-webkit-scrollbar {display:none;}
@@ -111,9 +112,9 @@
    background: linear-gradient(to right, #D9D9D9 70%, #F5CB5C 30%);
  }
  .textclan{
-  width: 35%;
+  width: 42%;
   text-align: justify;
-  padding: 3rem;
+  padding: 1rem;
   margin-left: 3px;
   display: flex;
   flex-direction: column;
@@ -183,7 +184,7 @@
 
     
    font-weight: 300;
-   margin-top: 2rem;
+   margin-top: 1rem;
    font-size: 16px;
    line-height: 162.52%;
    color: #000000;

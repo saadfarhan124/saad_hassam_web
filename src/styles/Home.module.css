@@ -107,8 +107,7 @@
   }
  @media (max-width: 1440px) {
   .container {
-   
-    background-position: right top 5vh;
+    background-position: right top 6vh;
    
   }
     .imgs {
@@ -207,9 +206,8 @@
     }
     .container {
       height: 90vh;
- 
-      background-size: 70% 40%;
-      background-position: right  top 1rem;
+      background-size: 50% 35%;
+      background-position: right -10px  top 5rem;
    
     }
   }

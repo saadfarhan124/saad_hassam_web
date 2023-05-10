@@ -50,12 +50,29 @@ const Contact = () => {
   const [isLoading, setLoading] = useState(false);
   const [selected, setSelected] = useState([]);
 
+  const handleSelect = (content) => {
+    const findIfExist = selected.find((item) => item === content);
+
+    if (findIfExist) {
+      const index = selected.indexOf(content);
+      const temp = [...selected];
+
+      if (index !== -1) {
+        temp.splice(index, 1);
+        setSelected(temp);
+      }
+    } else {
+      setSelected([...selected, content]);
+    }
+  };
+
+  console.log(selected)
   const sendEmail = (e) => {
     setLoading(true);
     const templateParams = {
       name: e.name,
       email: e.email,
-      subject: e.budget,
+      subject: selected.join(),
       message: `${e.message} Budget: ${e.budget}`,
     };
 
@@ -199,11 +216,18 @@ const Contact = () => {
                       xxl={7}
                       key={i}
                       style={{ cursor: "pointer" }}
-                      // onClick={() => }
+                      onClick={() => handleSelect(item.title)}
                     >
                       <Card
                         bodyStyle={{ padding: "10px 10px" }}
-                        style={{ border: "1px solid" }}
+                        style={{
+                          border:
+                            selected.filter((i) => {
+                              return i === item.title;
+                            }).toString() === item.title
+                              ? "1px solid"
+                              : null,
+                        }}
                       >
                         <Row justify="center" align="middle">
                           <Image
@@ -216,7 +240,17 @@ const Contact = () => {
                         </Row>
                       </Card>
                       <Row justify="center">
-                        <Typography.Text strong>{item.title}</Typography.Text>
+                        <Typography.Text
+                          strong={
+                            selected.filter((i) => {
+                              return i === item.title;
+                            }).toString() === item.title
+                              ? true
+                              : false
+                          }
+                        >
+                          {item.title}
+                        </Typography.Text>
                       </Row>
                     </Col>
                   ))}

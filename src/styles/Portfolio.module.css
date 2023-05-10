@@ -151,8 +151,6 @@
  }
 
  .c1 {
-   margin-top: 1rem;
-    
    font-weight: 700;
    font-size: 32px;
    line-height: 39px;
@@ -165,7 +163,6 @@
    font-weight: 400;
    font-size: 32px;
    line-height: 39px;
-   margin-top: 2rem;
    color: #000000;
 
  }
@@ -173,9 +170,8 @@
  .c3 {
    color: #4A8CF0;
    margin-top: 2rem;
-    
    font-weight: 400;
-   font-size: 18px;
+   font-size: 14px;
    line-height: 22px;
 
  }

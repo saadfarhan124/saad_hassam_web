@@ -140,9 +140,6 @@ const Portfolio = () => {
                     <Typography.Text className={styles.c2}>
                       UI/UX Design lead
                     </Typography.Text>
-                    <br />
-                    <br />
-                    <br />
 
                     <Typography.Text className={styles.c4}>
                       As a UI/UX designer, I led the revamp and redesign of
@@ -224,8 +221,6 @@ const Portfolio = () => {
                     <Typography.Text className={styles.c2}>
                       Creator
                     </Typography.Text>
-                    <br />
-
                     <Typography.Text className={styles.c4}>
                       A cutting-edge meditation app featuring a modern user
                       interface has been designed and developed, enabling users
@@ -367,7 +362,7 @@ const Portfolio = () => {
                       Code Clan Web
                     </Typography.Title>
                     <Typography.Text className={styles.c2}>
-                      Graphic Director
+                      Creative Director
                     </Typography.Text>
                     <br />
 

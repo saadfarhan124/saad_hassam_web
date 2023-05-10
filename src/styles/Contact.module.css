@@ -25,7 +25,7 @@ margin-top: 12vh;
     background-image: url('../../public/assets/images/r4.png');
     background-repeat: no-repeat;
     background-size: 90% 90%;
-    background-position: bottom left;
+    background-position: bottom -10px left;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -60,6 +60,15 @@ margin-top: 12vh;
   .innercontain input {
     height: 50px;
    }
+    .innercontain input::placeholder {
+color: grey;
+font-weight: 100;
+   }   
+    .textarea textarea::placeholder {
+color: grey;
+font-weight: 100;
+   }
+  
   
   .innercontain{
   width: 70%;
@@ -75,11 +84,10 @@ margin-top: 12vh;
     
   }
   .para{
-    
-    font-weight: 300;
+    font-weight: lighter ;
     font-size: 22px;
     line-height: 27px;
-    
+    font-family: 'Inter' !important;
     color: #000000;
 
   }
@@ -87,6 +95,10 @@ margin-top: 12vh;
 
  
 @media (max-width: 2560px) {
+  .container2{
+    margin-bottom: -10rem;
+
+  }
  
 } 
 @media (max-width: 2000px) {
@@ -115,6 +127,11 @@ margin-top: 12vh;
     .container3{
       margin-top: -3rem;
     }
+    .container2{
+      margin-bottom: -6rem;
+  
+    }
+   
     
  
 }
@@ -124,6 +141,10 @@ margin-top: 12vh;
 }
 
 @media (max-width: 1024px) {
+  .container2{
+    margin-bottom: -10rem;
+
+  }
  
 }
 
@@ -137,6 +158,10 @@ margin-top: 12vh;
   .innercontain input {
     height: 35px;
    }
+   .container2{
+    margin-bottom: -12rem;
+
+  }
   
 }
  
@@ -162,8 +187,24 @@ margin-top: 12vh;
       font-size: 9px;
       line-height: 7px;
     }
+    .container2{
+      margin-bottom: -6rem;
+  
+    }
    
     
+}
+@media (max-width: 414px) {
+  .container2{
+    margin-bottom: -12rem;
+
+  }
+}
+@media (max-width: 375px) {
+  .container2{
+    margin-bottom: -7rem;
+
+  }
 }
 @media (max-width: 320px) {
   .title{

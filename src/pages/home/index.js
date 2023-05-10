@@ -24,11 +24,35 @@ const HomePage = () => {
                 alignItems: "center",
               }}
             >
-              <FaInstagram className={styles.icon} size={30} color="white" />
-              <br />
-              <FaLinkedin className={styles.icon} size={30} color="white" />
-              <br />
-              <FaYoutube className={styles.icon} size={30} color="white" />
+              <a
+                href="https://www.instagram.com/hassamarts/"
+                target="_blank"
+                style={{
+                  textDecoration: "none",
+                }}
+              >
+                <FaInstagram className={styles.icon} size={30} color="white" />
+              </a>
+              <br />{" "}
+              <a
+                href="https://www.linkedin.com/in/saad-hassam-b6950b70"
+                target="_blank"
+                style={{
+                  textDecoration: "none",
+                }}
+              >
+                <FaLinkedin className={styles.icon} size={30} color="white" />
+              </a>
+              <br />{" "}
+              <a
+                href="https://www.youtube.com/channel/UCxCL8vMyNqTOkI0RWXM_FRw"
+                target="_blank"
+                style={{
+                  textDecoration: "none",
+                }}
+              >
+                <FaYoutube className={styles.icon} size={30} color="white" />
+              </a>
               <br />
               <img className={styles.line} src="/assets/images/line.png" />
             </div>
@@ -66,25 +90,19 @@ const HomePage = () => {
             <h1 className={styles.title2}>Designer/Concept Artist</h1>
 
             <p className={styles.para}>
-              I began my journey in the world of art, creating realistic
-              paintings and drawings. But as time went on, my artistic vision
-              began to evolve. I found myself exploring the abstract,
-              experimenting with simple shapes, and pushing the boundaries of
-              what was possible. Through my career, I never stopped creating
-              art, always striving to create something new and unique.
-            </p>
-
-            <p className={styles.para}>
-              My creative journey eventually led me to the world of concept art,
-              where I designed characters for local films. I also discovered a
-              love for theatre, taking a six-month training session in acting
-              that culminated in performances on some of the biggest stages
-              around
+              As an artist with a background in traditional, abstract, and
+              concept art, as well as theater, I have a diverse range of
+              experiences that inform my work. My skillset encompasses
+              traditional and digital art, animation, and UI/UX engineering,
+              using tools such as Figma, Adobe Creative Suite, and Blender. I am
+              constantly exploring new technologies and techniques to expand my
+              artistic expression and am currently focused on AI art. I approach
+              my art with a grounded and innovative mindset, always striving to
+              create something fresh and unique.
             </p>
           </Col>
         </Row>
       </div>
-      <Footer />
     </>
   );
 };

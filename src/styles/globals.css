@@ -8,14 +8,15 @@
 }
 
 .navbar {
-  height: 10vh;
-  margin-bottom: 10vh;
+  height: 6vh;
   position: fixed;
   display: flex;
   justify-content: center;
   width: 100%;
   z-index: 1000;
-  background-color:  transparent;
+  background-color:  white;
+  align-items: center !important;
+  justify-content: center !important;
  
 
 }
@@ -24,8 +25,8 @@
  
 
 .nav-button {
-  margin: 0 5px;
-  padding: 10px 10px;
+ 
+  padding: 10px 20px;
   font-size: 18px;
   background-color: transparent;
   border: none;
@@ -96,11 +97,11 @@ background-size: contain;
   @media screen and (max-width: 425px) {
     .navbar{
       height: fit-content;
-      margin-top: 1rem;
+
     }
     .nav-button {
       margin: 0 5px;
-      padding: 1px 5px;
+      padding: 5px 5px;
       font-size: 14px; 
     }
     .footer-img{

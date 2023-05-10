@@ -141,24 +141,21 @@ const Portfolio = () => {
                       UI/UX Design lead
                     </Typography.Text>
                     <br />
-
-                    <Typography.Text className={styles.c3}>
-                      Case Study
-                    </Typography.Text>
+                    <br />
+                    <br />
 
                     <Typography.Text className={styles.c4}>
-                      This case study describes the successful redesign of a
-                      logistic company&apos;s website, including the homepage,
-                      service pages, tracking pages, and contact pages. The
-                      redesign aimed to improve the website&apos;s
-                      functionality, increase engagement, and ultimately drive
-                      more conversions. The new website includes a tracking
-                      system, an intuitive service page, and a user-friendly
-                      contact page, which have all received positive feedback
-                      from customers. The redesign has resulted in a modern and
-                      functional website that better serves the company&apos;s
-                      customers&apos; needs, improving the user experience, and
-                      leading to increased engagement and more conversions.
+                      As a UI/UX designer, I led the revamp and redesign of
+                      CDL1000&apos;s website to give it a modern look and feel.
+                      The project was initiated after the company was featured
+                      on Inc 5000. I recreated the entire brand, which included
+                      updating the color scheme, typography, and overall design
+                      language. Additionally, I redesigned the website&apos;s
+                      quoting engine to match the new look and feel, providing a
+                      seamless and intuitive user experience for visitors. The
+                      revamped website was well-received by both the company and
+                      its customers, establishing a modern digital presence for
+                      CDL1000.
                     </Typography.Text>
                   </div>
                 </div>
@@ -225,18 +222,19 @@ const Portfolio = () => {
                     </Typography.Text>
                     <br />
 
-                    <Typography.Text className={styles.c3}>
-                      Case Study
-                    </Typography.Text>
-
                     <Typography.Text className={styles.c4}>
-                      I began my journey in the world of art, creating realistic
-                      paintings and drawings. But as time went on, my artistic
-                      vision began to evolve. I found myself exploring the
-                      abstract, experimenting with simple shapes, and pushing
-                      the boundaries of what was possible. Through my career, I
-                      never stopped creating art, always striving to create
-                      something new and unique.
+                      A cutting-edge meditation app featuring a modern user
+                      interface has been designed and developed, enabling users
+                      to schedule guided meditation sessions, access recorded
+                      guides, or communicate directly with an astrologer. The
+                      app&apos;s advanced features allow for a customized
+                      meditation experience, catering to individual preferences
+                      and needs. Modern UI/UX practices have been incorporated,
+                      including intuitive navigation and visually appealing
+                      graphics and animations, ensuring a seamless and engaging
+                      user experience. The app is a powerful tool for enhancing
+                      meditation practices and cultivating inner peace and
+                      mindfulness.
                     </Typography.Text>
                   </div>
                 </div>
@@ -296,29 +294,25 @@ const Portfolio = () => {
                 <div className={styles.textbox1}>
                   <div className={styles.texts1}>
                     <Typography.Title className={styles.d1}>
-                      CDL 1000 Dispatch
+                      Driver Tracking App
                     </Typography.Title>
                     <Typography.Text className={styles.d2}>
                       UI/UX Design lead
                     </Typography.Text>
 
-                    <Typography.Text className={styles.d3}>
-                      Case Study
-                    </Typography.Text>
-
                     <Typography.Text className={styles.d4}>
-                      This case study describes the successful redesign of a
-                      logistic company&apos;s website, including the homepage,
-                      service pages, tracking pages, and contact pages. The
-                      redesign aimed to improve the website&apos;s
-                      functionality, increase engagement, and ultimately drive
-                      more conversions. The new website includes a tracking
-                      system, an intuitive service page, and a user-friendly
-                      contact page, which have all received positive feedback
-                      from customers. The redesign has resulted in a modern and
-                      functional website that better serves the company&apos;s
-                      customers&apos; needs, improving the user experience, and
-                      leading to increased engagement and more conversions.
+                      As a UI/UX lead specializing in modern design practices
+                      and technology, I developed a tracking app for CDL1000, a
+                      transportation and logistics company, that provides live
+                      tracking, document upload, real-time notifications, and
+                      driver-POC communication. The app enhances CDL1000&apos;s
+                      operational efficiency and enables real-time monitoring of
+                      shipments. Drivers can easily upload documents throughout
+                      the delivery process, while real-time notifications and
+                      driver-POC communication ensure seamless coordination.
+                      Overall, the CDL1000 tracking app is a powerful tool that
+                      streamlines logistics operations and improves the customer
+                      experience.
                     </Typography.Text>
                   </div>
                 </div>
@@ -366,18 +360,19 @@ const Portfolio = () => {
                     </Typography.Text>
                     <br />
 
-                    <Typography.Text className={styles.c3}>
-                      Case Study
-                    </Typography.Text>
-
                     <Typography.Text className={styles.c4}>
-                      I began my journey in the world of art, creating realistic
-                      paintings and drawings. But as time went on, my artistic
-                      vision began to evolve. I found myself exploring the
-                      abstract, experimenting with simple shapes, and pushing
-                      the boundaries of what was possible. Through my career, I
-                      never stopped creating art, always striving to create
-                      something new and unique.
+                      I had the pleasure of working as a UI/UX lead with Code
+                      Clan, a software development company, to design a landing
+                      web page that serves as the backbone of their online
+                      presence. The website features a sleek, modern design that
+                      showcases Code Clan&apos;s exceptional software
+                      development services, their team of experts, and their
+                      impressive portfolio of past projects. By carefully
+                      balancing the design and functionality, we were able to
+                      create a landing page that delivers an immersive and
+                      engaging user experience, attracting potential clients and
+                      establishing Code Clan as a top-tier software development
+                      company.
                     </Typography.Text>
                   </div>
                 </div>
@@ -445,7 +440,6 @@ const Portfolio = () => {
           />
         </div>
       </div>
-      <Footer />
     </div>
   );
 };

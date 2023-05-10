@@ -26,15 +26,17 @@ const Experience = () => {
               sm={24}
               md={12}
               lg={12}
-              xl={11}
+              xl={{ span: 11, pull: 1 }}
               xxl={{ span: 12, pull: 2 }}
             >
               <p className={styles.coltwopara}>
-                As Senior Concept Artist, I helped a struggling team deliver one
-                project per week. As Team Lead, I improved the team&apos;s
-                performance, resulting in two high-quality projects per week. It
-                was an amazing experience and equipped me with strong leadership
-                and project management skills.
+                At Innovative Solutions, I started as a senior concept artist,
+                but my initiatives and leadership skills led to my promotion as
+                a team lead. In this role, I played a key part in optimizing
+                team performance and resource utilization. Prior to my arrival,
+                the team took more than a week to deliver one book. However,
+                with my leadership, we were able to improve productivity and
+                began delivering two books per team in the same timeframe.
               </p>
             </Col>
           </Row>
@@ -49,8 +51,8 @@ const Experience = () => {
             >
               <p className={styles.t1}>2020 - 2021</p>
 
-              <p className={styles.t2}>Freelance Illustrato</p>
-              <p className={styles.t2}>Upwork</p>
+              <p className={styles.t2}>Creative Lead</p>
+              <p className={styles.t2}>Code Clan</p>
             </Col>
 
             <Col
@@ -58,15 +60,17 @@ const Experience = () => {
               sm={24}
               md={12}
               lg={12}
-              xl={11}
+              xl={{ span: 11, pull: 1 }}
               xxl={{ span: 12, pull: 2 }}
             >
               <p className={styles.coltwopara}>
-                During the COVID lockdowns, I turned to freelance work on
-                platforms such as Upwork and Fiverr, which allowed me to earn an
-                income and expand my professional network. It was an amazing
-                experience that helped me overcome financial struggles and
-                sharpen my skills.
+                As a UI/UX designer and creative consultant at Code Clan, my
+                primary focus was to enhance the user experience and interface
+                design for various US and UK based companies. This involved
+                revamping or creating their digital presence, including
+                websites, mobile applications, and web-based platforms, to
+                ensure they were user-friendly, visually appealing, and easy to
+                navigate.
               </p>
             </Col>
           </Row>
@@ -90,18 +94,21 @@ const Experience = () => {
               sm={24}
               md={12}
               lg={12}
-              xl={11}
+              xl={{ span: 11, pull: 1 }}
               xxl={{ span: 12, pull: 2 }}
             >
               <p className={styles.coltwopara}>
-                I created illustrations for an Arabic-themed animated film,
-                which was an amazing experience. It allowed me to learn about
-                Arabic culture and showcase my artistic skills.
+                During my tenure at Blackboard, I started as an illustrator and
+                played a key role in transforming scripts into storyboards for
+                3D animated shorts. With my diverse skill set and experience, I
+                was able to quickly advance through the ranks. As I progressed,
+                I took on the responsibility of optimizing and redesigning the
+                workflow pipeline, resulting in a significant reduction in
+                production time.
               </p>
             </Col>
           </Row>
         </div>
-        <Footer />;
       </div>
     </>
   );

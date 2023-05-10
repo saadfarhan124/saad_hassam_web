@@ -6,10 +6,29 @@
 }
 
 .misonary {
-  width: 80% !important;
+  width: 100% !important;
   height: 90vh;
-  margin-top: 10vh;
+  padding-top: 10vh;
+  padding-left: 20vh;
+  padding-right: 20vh;
   overflow-y: scroll;
   overflow-x: hidden;
 
+}
+
+@media (max-width: 2560px) {
+ 
+} 
+@media (max-width: 425px) {
+ 
+.misonary {
+  width: 100% !important;
+  height: 90vh;
+  padding-top: 20vh;
+  padding-left: 2vh;
+  padding-right: 2vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+
+}
 }

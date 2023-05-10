@@ -36,7 +36,7 @@ const images1 = [
 
 const images = [
   "/assets/images/p1.png",
-  "/assets/images/cdl.png",
+  "/assets/images/cdlbg2.png",
   "/assets/images/p3.png",
   "/assets/images/p4.png",
 ];

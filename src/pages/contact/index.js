@@ -86,6 +86,8 @@ const Contact = () => {
       .then(
         (response) => {
           setLoading(false);
+          form.resetFields()
+          setSelected([])
           message.success(
             "We appreciate your interest and will get back to you as soon as possible"
           );

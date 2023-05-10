@@ -261,15 +261,15 @@ const Portfolio = () => {
             </Row>
           </div>
 
-          <div className={styles.container6}>
+          <div className={styles.container5}>
             <Row className={styles.row}>
               <Col
                 xs={24}
                 sm={24}
                 md={24}
                 lg={5}
-                xl={{ span: 6 }}
-                xxl={{ span: 6, push: 1 }}
+                xl={{ span: 6, push: 0 }}
+                xxl={{ span: 6 }}
                 className={styles.col}
               >
                 <div className={styles.overlay}>
@@ -293,14 +293,15 @@ const Portfolio = () => {
               >
                 <div className={styles.textbox1}>
                   <div className={styles.texts1}>
-                    <Typography.Title className={styles.d1}>
+                    <Typography.Title className={styles.c1}>
                       Driver Tracking App
                     </Typography.Title>
-                    <Typography.Text className={styles.d2}>
+                    <Typography.Text className={styles.c2}>
                       UI/UX Design lead
                     </Typography.Text>
+                    <br />
 
-                    <Typography.Text className={styles.d4}>
+                    <Typography.Text className={styles.c4}>
                       As a UI/UX lead specializing in modern design practices
                       and technology, I developed a tracking app for CDL1000, a
                       transportation and logistics company, that provides live
@@ -323,7 +324,7 @@ const Portfolio = () => {
                 md={8}
                 lg={8}
                 xl={4}
-                xxl={{ span: 9, pull: 2 }}
+                xxl={{ span: 9, pullL: 2 }}
                 className={styles.col}
               >
                 <div className={styles.overlay}>
@@ -356,7 +357,7 @@ const Portfolio = () => {
                       Code Clan Web
                     </Typography.Title>
                     <Typography.Text className={styles.c2}>
-                      Role Title
+                      Graphic Director
                     </Typography.Text>
                     <br />
 

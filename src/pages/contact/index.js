@@ -199,6 +199,7 @@ const Contact = () => {
                       xxl={7}
                       key={i}
                       style={{ cursor: "pointer" }}
+                      // onClick={() => }
                     >
                       <Card
                         bodyStyle={{ padding: "10px 10px" }}

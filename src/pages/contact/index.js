@@ -48,7 +48,7 @@ const data = [
 const Contact = () => {
   const [form] = Form.useForm();
   const [isLoading, setLoading] = useState(false);
-  const [selected, setSelected] = useState([])
+  const [selected, setSelected] = useState([]);
 
   const sendEmail = (e) => {
     setLoading(true);
@@ -85,7 +85,7 @@ const Contact = () => {
       <Row justify="space-around" align="bottom">
         <Col xs={20} sm={20} md={8} lg={8} xl={8} xxl={8}>
           <Typography.Title level={1} style={{ fontSize: "5rem" }}>
-            Let's Work <br /> Together
+            Let&apos;s Work <br /> Together
           </Typography.Title>
         </Col>
         <Col xs={20} sm={20} md={8} lg={8} xl={8} xxl={8}>

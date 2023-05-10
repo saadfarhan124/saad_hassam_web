@@ -176,6 +176,8 @@ const Portfolio = () => {
                     height={670}
                     preview={false}
                     className={styles.firstImage}
+                    loading="lazy"
+                    alt="No Image Found"
                   />
                 </div>
               </Col>
@@ -200,6 +202,8 @@ const Portfolio = () => {
                     height={500}
                     preview={false}
                     className={styles.b1}
+                    loading="lazy"
+                    alt="No Image Found"
                   />
                 </div>
               </Col>
@@ -255,6 +259,8 @@ const Portfolio = () => {
                     height={600}
                     preview={false}
                     className={styles.b2}
+                    loading="lazy"
+                    alt="No Image Found"
                   />
                 </div>
               </Col>
@@ -279,6 +285,8 @@ const Portfolio = () => {
                     height={500}
                     preview={false}
                     className={styles.b1}
+                    loading="lazy"
+                    alt="No Image Found"
                   />
                 </div>
               </Col>
@@ -334,6 +342,8 @@ const Portfolio = () => {
                     height={600}
                     preview={false}
                     className={styles.b2}
+                    loading="lazy"
+                    alt="No Image Found"
                   />
                 </div>
               </Col>
@@ -394,6 +404,8 @@ const Portfolio = () => {
                     height={623}
                     preview={false}
                     className={styles.clanImage}
+                    loading="lazy"
+                    alt="No Image Found"
                   />
                 </div>
               </Col>

@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "../../styles/Home.module.css";
-import { Col, Row, Typography } from "antd";
+import { Col, Row } from "antd";
 import Footer from "../footer";
 import { FaInstagram, FaLinkedin, FaYoutube } from "react-icons/fa";
 const HomePage = () => {
@@ -54,7 +54,11 @@ const HomePage = () => {
                 <FaYoutube className={styles.icon} size={30} color="white" />
               </a>
               <br />
-              <img className={styles.line} src="/assets/images/line.png" />
+              <img
+                loading="lazy"
+                className={styles.line}
+                src="/assets/images/line.png"
+              />
             </div>
           </Col>
           <Col
@@ -71,6 +75,7 @@ const HomePage = () => {
               src="/assets/images/profile.png"
               className={styles.img}
               alt="No Image Found"
+              loading="lazy"
             />
           </Col>
           <Col

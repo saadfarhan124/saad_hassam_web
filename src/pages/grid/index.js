@@ -1,6 +1,7 @@
 import React from "react";
 import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
 import styles from "../../styles/Grid.module.css";
+import { Image } from "antd";
 
 const images1 = [
   { url: "/assets/images/1.png" },
@@ -36,17 +37,19 @@ const Grid = () => {
         >
           <Masonry>
             {images1.map((image, i) => (
-              <img
+              <Image
                 key={i}
                 src={image.url}
+                width={image.width}
+                height={image.height}
+                preview={false}
                 style={{
                   padding: "10px",
-                  width: image.width,
-                  height: image.height,
                   display: "block",
                   objectFit: "cover",
                 }}
-                alt=""
+                loading="lazy"
+                alt="No Image Found"
               />
             ))}
           </Masonry>

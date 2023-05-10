@@ -121,7 +121,65 @@ const Portfolio = () => {
     <div className={styles.container}>
       <div className={styles.innercontainer}>
         <Slider {...settings} className={styles.slider}>
-          <div className={styles.container3}>
+          <div className={styles.container4}>
+            <Row className={styles.row}>
+              <Col
+                xs={24}
+                sm={24}
+                md={24}
+                lg={10}
+                xl={8}
+                xxl={8}
+                className={styles.col1}
+              >
+                <div className={styles.clanbox}>
+                  <div className={styles.textclan}>
+                    <Typography.Title className={styles.c1}>
+                      CDL 1000
+                    </Typography.Title>
+                    <Typography.Text className={styles.c2}>
+                      UI/UX Design lead
+                    </Typography.Text>
+                    <Typography.Text className={styles.c4}>
+                      As a UI/UX designer, I led the revamp and redesign of
+                      CDL1000&apos;s website to give it a modern look and feel.
+                      The project was initiated after the company was featured
+                      on Inc 5000. I recreated the entire brand, which included
+                      updating the color scheme, typography, and overall design
+                      language. Additionally, I redesigned the website&apos;s
+                      quoting engine to match the new look and feel, providing a
+                      seamless and intuitive user experience for visitors. The
+                      revamped website was well-received by both the company and
+                      its customers, establishing a modern digital presence for
+                      CDL1000.
+                    </Typography.Text>
+                  </div>
+                </div>
+              </Col>
+              <Col
+                xs={24}
+                sm={24}
+                md={8}
+                lg={7}
+                xl={13}
+                xxl={11}
+                className={styles.col}
+              >
+                <div className={styles.overlay}>
+                  <Image
+                    src={images[1]}
+                    width={600}
+                    height={623}
+                    preview={false}
+                    className={styles.clanImage}
+                    loading="lazy"
+                    alt="No Image Found"
+                  />
+                </div>
+              </Col>
+            </Row>
+          </div>
+          {/* <div className={styles.container3}>
             <Row className={styles.row}>
               <Col
                 xs={24}
@@ -179,7 +237,7 @@ const Portfolio = () => {
                 </div>
               </Col>
             </Row>
-          </div>
+          </div> */}
 
           <div className={styles.container5}>
             <Row className={styles.row}>
@@ -302,8 +360,6 @@ const Portfolio = () => {
                     <Typography.Text className={styles.c2}>
                       UI/UX Design lead
                     </Typography.Text>
-                    <br />
-
                     <Typography.Text className={styles.c4}>
                       As a UI/UX lead specializing in modern design practices
                       and technology, I developed a tracking app for CDL1000, a
@@ -364,8 +420,6 @@ const Portfolio = () => {
                     <Typography.Text className={styles.c2}>
                       Creative Director
                     </Typography.Text>
-                    <br />
-
                     <Typography.Text className={styles.c4}>
                       I had the pleasure of working as a UI/UX lead with Code
                       Clan, a software development company, to design a landing
@@ -438,7 +492,7 @@ const Portfolio = () => {
             </ResponsiveMasonry>
           </div>
         </Slider>
-        <div className={styles.downarrow}>
+        {/* <div className={styles.downarrow}>
           <MdArrowBackIos
             onClick={handleScrollClick}
             size={60}
@@ -446,7 +500,7 @@ const Portfolio = () => {
               transform: isScrolled ? "rotate(270deg)" : "rotate(270deg)",
             }}
           />
-        </div>
+        </div> */}
       </div>
     </div>
   );

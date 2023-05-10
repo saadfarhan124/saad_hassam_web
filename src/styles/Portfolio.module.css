@@ -155,11 +155,11 @@
    font-size: 32px;
    line-height: 39px;
    color: #000000;
+   margin-bottom: 0px !important;
 
  }
 
  .c2 {
-    
    font-weight: 400;
    font-size: 32px;
    line-height: 39px;
@@ -348,7 +348,7 @@
    .c4 {
 
      margin-bottom: 1rem;
-     font-size: 13px;
+     font-size: 12px;
    }
 
    .d1 {

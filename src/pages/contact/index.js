@@ -3,8 +3,8 @@ import {
   Button,
   Card,
   Col,
-  Divider,
   Form,
+  Grid,
   Input,
   InputNumber,
   Row,
@@ -13,6 +13,13 @@ import {
 } from "antd";
 import emailjs from "emailjs-com";
 import Image from "next/image";
+import {
+  TiChartBarOutline,
+  TiMail,
+  TiMessage,
+  TiUser,
+  TiUserOutline,
+} from "react-icons/ti";
 const data = [
   {
     id: 1,
@@ -47,9 +54,10 @@ const data = [
 ];
 const Contact = () => {
   const [form] = Form.useForm();
+  const screens = Grid.useBreakpoint();
   const [isLoading, setLoading] = useState(false);
   const [selected, setSelected] = useState([]);
-
+  console.log(screens);
   const handleSelect = (content) => {
     const findIfExist = selected.find((item) => item === content);
 
@@ -66,7 +74,7 @@ const Contact = () => {
     }
   };
 
-  console.log(selected)
+  console.log(selected);
   const sendEmail = (e) => {
     setLoading(true);
     const templateParams = {
@@ -86,8 +94,8 @@ const Contact = () => {
       .then(
         (response) => {
           setLoading(false);
-          form.resetFields()
-          setSelected([])
+          form.resetFields();
+          setSelected([]);
           message.success(
             "We appreciate your interest and will get back to you as soon as possible"
           );
@@ -101,20 +109,28 @@ const Contact = () => {
 
   return (
     <div id="contact" style={{ marginBlock: 20, height: "100vh" }}>
-      <Row justify="space-around" align="bottom">
+      <Row justify={screens.xs ? "center" : "space-around"} align="bottom">
         <Col xs={20} sm={20} md={8} lg={8} xl={8} xxl={8}>
-          <Typography.Title level={1} style={{ fontSize: "5rem" }}>
+          <Typography.Title
+            level={1}
+            style={{
+              fontSize: screens.xs ? "4rem" : "5rem",
+              textAlign: screens.xs || !screens.md ? "center" : "start",
+            }}
+          >
             Let&apos;s Work <br /> Together
           </Typography.Title>
         </Col>
         <Col xs={20} sm={20} md={8} lg={8} xl={8} xxl={8}>
-          <Image
-            height={400}
-            width={400}
-            style={{ objectFit: "contain" }}
-            src="/assets/images/r6.png"
-            alt="No Image Found"
-          />
+          <Row justify={screens.xs || !screens.md ? "center" : "start"}>
+            <Image
+              height={screens.xs ? 300 : 400}
+              width={screens.xs ? 300 : 400}
+              style={{ objectFit: "contain" }}
+              src="/assets/images/r6.png"
+              alt="No Image Found"
+            />
+          </Row>
         </Col>
       </Row>
       <Form
@@ -125,16 +141,27 @@ const Contact = () => {
         requiredMark={false}
         autoComplete="off"
       >
-        <Row justify="space-around" align="top" style={{ marginBottom: 10 }}>
+        <Row
+          justify={screens.xs ? "center" : "space-around"}
+          align="top"
+          style={{ marginBottom: 10 }}
+        >
           <Col xs={20} sm={20} md={8} lg={8} xl={8} xxl={8}>
-            <Row justify="start">
-              <div style={{ width: "80%" }}>
+            <Row justify={"start"}>
+              <div
+                style={{ width: screens.xs || !screens.md ? "100%" : "80%" }}
+              >
                 <Form.Item
                   name="name"
-                  label="NAME"
+                  label={
+                    <Row align="middle">
+                      <TiUserOutline size={16} />
+                      <Typography.Text strong>NAME </Typography.Text>
+                    </Row>
+                  }
                   rules={[
                     {
-                      required: false,
+                      required: true,
                       message: "Invalid Name!",
                     },
                   ]}
@@ -143,14 +170,19 @@ const Contact = () => {
                 </Form.Item>
                 <Form.Item
                   name="email"
-                  label="EMAIL"
+                  label={
+                    <Row align="middle">
+                      <TiMail size={16} />
+                      <Typography.Text strong>EMAIL </Typography.Text>
+                    </Row>
+                  }
                   rules={[
                     {
                       type: "email",
                       message: "Invalid Email",
                     },
                     {
-                      required: false,
+                      required: true,
                       message: "Invalid Email!",
                     },
                   ]}
@@ -160,10 +192,15 @@ const Contact = () => {
 
                 <Form.Item
                   name="message"
-                  label="MESSAGE"
+                  label={
+                    <Row align="middle">
+                      <TiMessage size={16} />
+                      <Typography.Text strong>MESSAGE </Typography.Text>
+                    </Row>
+                  }
                   rules={[
                     {
-                      required: false,
+                      required: true,
                       message: "Invalid Message!",
                     },
                   ]}
@@ -171,6 +208,7 @@ const Contact = () => {
                   <Input.TextArea size="large" placeholder="Message" />
                 </Form.Item>
                 <Button
+                size="large"
                   loading={isLoading}
                   htmlType="submit"
                   type="primary"
@@ -184,10 +222,22 @@ const Contact = () => {
 
           <Col xs={20} sm={20} md={8} lg={8} xl={8} xxl={8}>
             <Row justify="start">
-              <div style={{ width: "80%" }}>
+              <div
+                style={{ width: screens.xs || !screens.md ? "100%" : "80%" }}
+              >
                 <Form.Item
                   name="budget"
-                  label="Budget"
+                  label={
+                    <Row align="middle">
+                      <TiChartBarOutline size={16} />
+                      <Typography.Text strong>
+                        BUDGET{" "}
+                        <Typography.Text italic style={{ color: "lightgray" }}>
+                          (Optional)
+                        </Typography.Text>
+                      </Typography.Text>
+                    </Row>
+                  }
                   rules={[
                     {
                       required: false,
@@ -224,9 +274,11 @@ const Contact = () => {
                         bodyStyle={{ padding: "10px 10px" }}
                         style={{
                           border:
-                            selected.filter((i) => {
-                              return i === item.title;
-                            }).toString() === item.title
+                            selected
+                              .filter((i) => {
+                                return i === item.title;
+                              })
+                              .toString() === item.title
                               ? "1px solid"
                               : null,
                         }}
@@ -244,9 +296,11 @@ const Contact = () => {
                       <Row justify="center">
                         <Typography.Text
                           strong={
-                            selected.filter((i) => {
-                              return i === item.title;
-                            }).toString() === item.title
+                            selected
+                              .filter((i) => {
+                                return i === item.title;
+                              })
+                              .toString() === item.title
                               ? true
                               : false
                           }

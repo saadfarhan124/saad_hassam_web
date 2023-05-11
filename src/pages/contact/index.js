@@ -208,6 +208,7 @@ const Contact = () => {
                   <Input.TextArea size="large" placeholder="Message" />
                 </Form.Item>
                 <Button
+                size="large"
                   loading={isLoading}
                   htmlType="submit"
                   type="primary"

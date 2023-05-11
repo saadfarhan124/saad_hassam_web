@@ -107,7 +107,7 @@
    background: linear-gradient(to right, #D9D9D9 70%, #F5CB5C 30%);
  }
  .clanbox {
-   height: 580px;
+   height: 550px;
    width: 1000px;
    background: linear-gradient(to right, #D9D9D9 70%, #F5CB5C 30%);
  }
@@ -268,15 +268,16 @@
  } 
  @media (min-width: 1504px)and (max-width: 1768px) {
   .clanbox{
-    height: 500px;
+    height: 480px;
     width: 900px;
   }
   .textclan{
-    width: 47%;
+    width: 45%;
   }
   .clanImage{
+    margin-top: 4rem;
    width: 550px !important;
-   height: 520px !important;
+   height: 470px !important;
   }
   .textbox1{
 

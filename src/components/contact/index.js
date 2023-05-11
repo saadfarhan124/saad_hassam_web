@@ -86,10 +86,10 @@ const Contact = () => {
 
     emailjs
       .send(
-        "service_rgp72w3",
-        "template_083138l",
+        "service_s03de57",
+        "template_jfpa4y1",
         templateParams,
-        "VYj7rWlWm9vXK1NHp"
+        "f5eyikNj1kxRf-AHi"
       )
       .then(
         (response) => {
@@ -208,7 +208,7 @@ const Contact = () => {
                   <Input.TextArea size="large" placeholder="Message" />
                 </Form.Item>
                 <Button
-                size="large"
+                  size="large"
                   loading={isLoading}
                   htmlType="submit"
                   type="primary"

@@ -35,13 +35,13 @@ const images1 = [
 
 const images = [
   "/assets/images/p1.png",
-  "/assets/images/cdlbg2.png",
+  "/assets/images/bgcdl1.png",
   "/assets/images/p3.png",
   "/assets/images/p4.png",
 ];
 
 const images2 = [
-  "/assets/images/clan.png",
+  "/assets/images/clan1.png",
   "/assets/images/q2.png",
   "/assets/images/q3.png",
 ];
@@ -167,8 +167,8 @@ const Portfolio = () => {
                 <div className={styles.overlay}>
                   <Image
                     src={images[1]}
-                    width={600}
-                    height={623}
+                    width={650}
+                    height={550}
                     preview={false}
                     className={styles.clanImage}
                     loading="lazy"
@@ -448,8 +448,8 @@ const Portfolio = () => {
                 <div className={styles.overlay}>
                   <Image
                     src={images2[0]}
-                    width={600}
-                    height={623}
+                    width={670}
+                    height={600}
                     preview={false}
                     className={styles.clanImage}
                     loading="lazy"

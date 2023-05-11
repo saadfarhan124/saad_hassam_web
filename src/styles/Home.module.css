@@ -106,6 +106,12 @@
     width: 45px;
   }
   }
+ @media (min-width: 1504px)and (max-width: 1768px) {
+  .icon{
+    width: 35px  !important;
+    height: 35px  !important;
+  }
+ }
  @media (max-width: 1440px) {
   .container {
     background-position: right top 6vh;

@@ -126,7 +126,7 @@ const Contact = () => {
             <Image
               height={screens.xs ? 300 : 400}
               width={screens.xs ? 300 : 400}
-              style={{ objectFit: "contain" }}
+              style={{ objectFit: "contain", marginTop: "1rem !important" }}
               src="/assets/images/r6.png"
               alt="No Image Found"
             />

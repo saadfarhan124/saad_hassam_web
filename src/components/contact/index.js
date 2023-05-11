@@ -122,7 +122,7 @@ const Contact = () => {
           </Typography.Title>
         </Col>
         <Col xs={20} sm={20} md={8} lg={8} xl={8} xxl={8}>
-          <Row justify={screens.xs || !screens.md ? "center" : "start"}>
+          <Row justify={screens.xs || !screens.md ? "center" : "center"}>
             <Image
               height={screens.xs ? 300 : 400}
               width={screens.xs ? 300 : 400}
@@ -221,7 +221,7 @@ const Contact = () => {
           </Col>
 
           <Col xs={20} sm={20} md={8} lg={8} xl={8} xxl={8}>
-            <Row justify="start">
+            <Row justify="center">
               <div
                 style={{ width: screens.xs || !screens.md ? "100%" : "80%" }}
               >

@@ -1,11 +1,13 @@
+import dynamic from "next/dynamic";
 import HomePage from "./home";
 import Layouts from "../components/layouts";
 import Experience from "./experience";
 import Portfolio from "./portfolio";
-import Contact from "./contact";
 import Grid from "./grid";
-
+const Contact = dynamic(() => import("@/components/contact"));
+const Footer = dynamic(() => import("@/components/footer"));
 export default function Home() {
+
   return (
     <>
       <Layouts>
@@ -24,6 +26,7 @@ export default function Home() {
         <div id="contact">
           <Contact />
         </div>
+        {/* <Footer/> */}
       </Layouts>
     </>
   );

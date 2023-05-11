@@ -1,7 +1,6 @@
 import React from "react";
 import styles from "../../styles/Home.module.css";
 import { Col, Row } from "antd";
-import Footer from "../footer";
 import { FaInstagram, FaLinkedin, FaYoutube } from "react-icons/fa";
 const HomePage = () => {
   return (

@@ -5,7 +5,6 @@ import { MdArrowBackIos, MdArrowForwardIos } from "react-icons/md";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { Row, Col, Image, Typography } from "antd";
-import Footer from "../footer";
 import Slider from "react-slick";
 
 const images1 = [

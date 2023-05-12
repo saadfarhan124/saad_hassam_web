@@ -26,8 +26,8 @@ const Grid = () => {
       <div className={styles.misonary}>
         <ResponsiveMasonry
           columnsCountBreakPoints={{
-            320: 1,
-            710: 2,
+            499: 1,
+            710: 3,
             900: 4,
             1023: 2,
             1100: 4,

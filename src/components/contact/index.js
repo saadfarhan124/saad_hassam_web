@@ -122,10 +122,10 @@ const Contact = () => {
           </Typography.Title>
         </Col>
         <Col xs={20} sm={20} md={8} lg={8} xl={8} xxl={8}>
-          <Row justify={screens.xs || !screens.md ? "center" : "center"}>
+          <Row justify="center">
             <Image
-              height={screens.xs ? 300 : 400}
-              width={screens.xs ? 300 : 400}
+              height={screens.xs ? 250 : 380}
+              width={screens.xs ? 250 : 380}
               style={{ objectFit: "contain", marginTop: "1rem !important" }}
               src="/assets/images/r6.png"
               alt="No Image Found"
@@ -212,7 +212,11 @@ const Contact = () => {
                   loading={isLoading}
                   htmlType="submit"
                   type="primary"
-                  style={{ width: "100%" }}
+                  style={{
+                    width: "100%",
+                    display: screens.xs || !screens.md ? "none" : "",
+                  }}
+                  className="btn"
                 >
                   SEND MESSAGE
                 </Button>
@@ -251,6 +255,19 @@ const Contact = () => {
                     placeholder="Budget"
                   />
                 </Form.Item>
+                <Button
+                  size="large"
+                  loading={isLoading}
+                  htmlType="submit"
+                  type="primary"
+                  style={{
+                    width: "100%",
+                    display: screens.xs || !screens.md ? "" : "none",
+                  }}
+                  className="btn"
+                >
+                  SEND MESSAGE
+                </Button>
 
                 <Row
                   justify="space-between"

@@ -220,7 +220,7 @@
   }
 
  
-@media (max-width: 425px) {
+@media (max-width: 499px) {
   .container{
     background-size: 90% 30%;
     background-position: center top 23vh;

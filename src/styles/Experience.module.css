@@ -176,7 +176,8 @@ color: #231942;
   
 
 }
-@media (max-width: 425px) {
+@media (max-width: 499px) {
+ 
 
 .t1{
   margin-top: 3rem;

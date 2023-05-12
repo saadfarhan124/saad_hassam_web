@@ -134,31 +134,14 @@ const Portfolio = () => {
                 <div
                   className={styles.Mobimages}
                   style={{
-                    display: screens.xs || !screens.md ? "flex" : "none",
+                    display: screens.xs || !screens.lg ? "flex" : "none",
                     justifyContent: "center",
                   }}
                 >
                   <Image
                     src={images[1]}
-                    width={265}
-                    height={200}
-                    preview={false}
-                    loading="lazy"
-                    alt="No Image Found"
-                  />
-                </div>
-
-                <div
-                  style={{
-                    display: screens.md ? "flex" : "none",
-                    justifyContent: "center",
-                  }}
-                >
-                  <Image
-                    className={styles.Mobimages}
-                    src={images[1]}
-                    width={420}
-                    height={300}
+                    width={screens.md ? 400 : 265}
+                    height={screens.md ? 300 : 200}
                     preview={false}
                     loading="lazy"
                     alt="No Image Found"
@@ -328,8 +311,8 @@ const Portfolio = () => {
                   <Image
                     className={styles.Mobimages}
                     src={imagesMob[0]}
-                    width={320}
-                    height={200}
+                    width={380}
+                    height={280}
                     preview={false}
                     loading="lazy"
                     alt="No Image Found"
@@ -441,8 +424,8 @@ const Portfolio = () => {
                   <Image
                     className={styles.Mobimages}
                     src={imagesMob[1]}
-                    width={320}
-                    height={200}
+                    width={380}
+                    height={280}
                     preview={false}
                     loading="lazy"
                     alt="No Image Found"
@@ -518,31 +501,14 @@ const Portfolio = () => {
                 <div
                   className={styles.Mobimages}
                   style={{
-                    display: screens.xs || !screens.md ? "flex" : "none",
+                    display: screens.xs || !screens.lg ? "flex" : "none",
                     justifyContent: "center",
                   }}
                 >
                   <Image
                     src={images2[0]}
-                    width={265}
-                    height={220}
-                    preview={false}
-                    loading="lazy"
-                    alt="No Image Found"
-                  />
-                </div>
-
-                <div
-                  style={{
-                    display: screens.md ? "flex" : "none",
-                    justifyContent: "center",
-                  }}
-                >
-                  <Image
-                    className={styles.Mobimages}
-                    src={images2[0]}
-                    width={420}
-                    height={330}
+                    width={screens.md ? 400 : 265}
+                    height={screens.md ? 320 : 220}
                     preview={false}
                     loading="lazy"
                     alt="No Image Found"

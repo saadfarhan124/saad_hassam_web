@@ -108,7 +108,7 @@ const Contact = () => {
   };
 
   return (
-    <div id="contact" style={{ marginBlock: 20, height: "100vh" }}>
+    <div id="contact" style={{ marginBlock: 20, height: "95vh" }}>
       <Row justify={screens.xs ? "center" : "space-around"} align="bottom">
         <Col xs={20} sm={20} md={8} lg={8} xl={8} xxl={8}>
           <Typography.Title
@@ -116,6 +116,7 @@ const Contact = () => {
             style={{
               fontSize: screens.xs ? "4rem" : "5rem",
               textAlign: screens.xs || !screens.md ? "center" : "start",
+              marginTop: screens.xs || !screens.md ? "1rem" : "0",
             }}
           >
             Let&apos;s Work <br /> Together
@@ -255,19 +256,6 @@ const Contact = () => {
                     placeholder="Budget"
                   />
                 </Form.Item>
-                <Button
-                  size="large"
-                  loading={isLoading}
-                  htmlType="submit"
-                  type="primary"
-                  style={{
-                    width: "100%",
-                    display: screens.xs || !screens.md ? "" : "none",
-                  }}
-                  className="btn"
-                >
-                  SEND MESSAGE
-                </Button>
 
                 <Row
                   justify="space-between"
@@ -328,6 +316,20 @@ const Contact = () => {
                     </Col>
                   ))}
                 </Row>
+                <Button
+                  size="large"
+                  loading={isLoading}
+                  htmlType="submit"
+                  type="primary"
+                  style={{
+                    width: "100%",
+                    margin: "1rem 0",
+                    display: screens.xs || !screens.md ? "" : "none",
+                  }}
+                  className="btn"
+                >
+                  SEND MESSAGE
+                </Button>
               </div>
             </Row>
           </Col>

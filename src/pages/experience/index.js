@@ -23,8 +23,8 @@ const Experience = () => {
             <Col
               xs={24}
               sm={24}
-              md={12}
-              lg={12}
+              md={8}
+              lg={8}
               xl={{ span: 11, pull: 1 }}
               xxl={{ span: 12, pull: 2 }}
             >
@@ -57,8 +57,8 @@ const Experience = () => {
             <Col
               xs={24}
               sm={24}
-              md={12}
-              lg={12}
+              md={8}
+              lg={8}
               xl={{ span: 11, pull: 1 }}
               xxl={{ span: 12, pull: 2 }}
             >
@@ -91,8 +91,8 @@ const Experience = () => {
             <Col
               xs={24}
               sm={24}
-              md={12}
-              lg={12}
+              md={8}
+              lg={8}
               xl={{ span: 11, pull: 1 }}
               xxl={{ span: 12, pull: 2 }}
             >

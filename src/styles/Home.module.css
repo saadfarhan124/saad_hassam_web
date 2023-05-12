@@ -181,7 +181,7 @@
     }
   }
  
-@media (min-width: 500px)and (max-width: 768px) {
+@media (min-width: 541px)and (max-width: 1023px) {
   
   .img{
     height: 150px;
@@ -213,14 +213,14 @@
     }
     .container {
       height: 90vh;
-      background-size: 50% 35%;
-      background-position: right -10px  top 5rem;
+      background-size: 55% 32%;
+      background-position: right -10px  top 8rem;
    
     }
   }
 
  
-@media (max-width: 499px) {
+@media (max-width: 540px) {
   .container{
     background-size: 90% 30%;
     background-position: center top 23vh;

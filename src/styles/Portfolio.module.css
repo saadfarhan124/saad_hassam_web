@@ -300,12 +300,16 @@
   .c4{
     font-size: 15px;
   }
-  
+  .innercontainer{
+    margin-top: 2rem;
+  }
 
 
  }
 
  @media (max-width: 1440px) {
+  
+ 
   .downarrow{
     text-align: center;
     margin-top: -6rem;
@@ -453,7 +457,9 @@
   .container5{
     margin-left: 2rem;
   }
- 
+ .innercontainer{
+  margin-top: 4rem;
+ }
  
 
 
@@ -466,6 +472,7 @@
  }
 
  @media (max-width: 1024px) {
+ 
   .clanImage{
     width: 450px !important;
     height: 450px !important;
@@ -606,6 +613,7 @@
   margin-top: 1rem ;
 
  }
+  
  
   
  }

@@ -80,6 +80,12 @@ color: #231942;
 
 } 
 @media (max-width: 2000px) {
+  .contain{
+    margin-top: 5rem;
+  
+  
+  }
+
 
 }
 @media (max-width: 1440px) {
@@ -146,7 +152,7 @@ color: #231942;
 
 }
 
-@media (max-width: 786px) {
+@media (max-width: 1023px) {
   .contain{
     margin-top: 9rem;
   }
@@ -159,7 +165,7 @@ color: #231942;
   color: #231942;
     }
     .t2{
-    margin-top: 2rem;
+    margin-top: 1rem;
   font-weight: 400;
   font-size: 15px;
   
@@ -169,36 +175,37 @@ color: #231942;
        
       font-weight: 400;
       font-size: 15px;
-      margin-top: 1rem;
+      margin-top: 0;
 
         }
        
   
 
 }
-@media (max-width: 499px) {
+@media (max-width: 599px) {
  
 
 .t1{
   margin-top: 3rem;
-
+text-align: left;
   font-weight: 700;
   font-size: 22px;
-  padding: 0 3rem;
+  padding: 0 1rem;
+ 
 
   
   color: #231942;
     }
     .t2{
-    margin-top: 1rem;
-    padding: 0 3rem;
+    margin-top: 0;
+    padding: 0 1rem;
   font-weight: 400;
   font-size: 11px;
   
   color: #231942;
     }
     .coltwopara{
-width: 80%;
+width: 90%;
       padding: 1rem 3rem;
 
        

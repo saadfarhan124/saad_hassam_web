@@ -10,7 +10,7 @@ const HomePage = () => {
           <Col
             xs={{ span: 1, offset: 1 }}
             sm={1}
-            md={{ span: 1, offset: 1 }}
+            md={{ span: 1, offset: 2 }}
             lg={{ span: 4, offset: 1 }}
             xl={{ span: 1, offset: 1 }}
             xxl={{ span: 1 }}
@@ -63,7 +63,7 @@ const HomePage = () => {
           <Col
             sm={1}
             xs={{ span: 1 }}
-            md={{ span: 4, offset: 1 }}
+            md={{ span: 4, pull: 2 }}
             lg={{ span: 4, offset: 1, pull: 2 }}
             xl={{ span: 1, offset: 1 }}
             xxl={{ span: 1, pull: 1 }}
@@ -80,7 +80,7 @@ const HomePage = () => {
           <Col
             sm={20}
             xs={{ span: 20 }}
-            md={{ span: 13, offset: 1 }}
+            md={{ span: 13, pull: 2 }}
             lg={{ span: 12, offset: 1, pull: 2 }}
             xl={{ span: 14, offset: 0 }}
             xxl={{ span: 17, pull: 1 }}

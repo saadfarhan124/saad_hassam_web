@@ -96,7 +96,7 @@ const Portfolio = () => {
   function CustomNextArrow(props) {
     const { className, onClick, currentSlide, slideCount } = props;
 
-    const isLastSlide = currentSlide === slideCount - 2;
+    const isLastSlide = currentSlide === slideCount - 1;
     if (isLastSlide) {
       return null;
     }
@@ -140,8 +140,8 @@ const Portfolio = () => {
                 >
                   <Image
                     src={images[1]}
-                    width={265}
-                    height={200}
+                    width={screens.md ? 400 : 265}
+                    height={screens.md ? 300 : 200}
                     preview={false}
                     loading="lazy"
                     alt="No Image Found"
@@ -287,16 +287,32 @@ const Portfolio = () => {
                   />
                 </div>{" "}
                 <div
-                  className={styles.Mobimages}
                   style={{
-                    display: screens.xs || !screens.lg ? "flex" : "none",
+                    display: screens.xs || !screens.md ? "flex" : "none",
                     justifyContent: "center",
                   }}
                 >
                   <Image
+                    className={styles.Mobimages}
                     src={imagesMob[0]}
                     width={265}
                     height={200}
+                    preview={false}
+                    loading="lazy"
+                    alt="No Image Found"
+                  />
+                </div>{" "}
+                <div
+                  style={{
+                    display: screens.md ? "flex" : "none",
+                    justifyContent: "center",
+                  }}
+                >
+                  <Image
+                    className={styles.Mobimages}
+                    src={imagesMob[0]}
+                    width={380}
+                    height={280}
                     preview={false}
                     loading="lazy"
                     alt="No Image Found"
@@ -386,7 +402,7 @@ const Portfolio = () => {
                 <div
                   className={styles.Mobimages}
                   style={{
-                    display: screens.xs || !screens.lg ? "flex" : "none",
+                    display: screens.xs || !screens.md ? "flex" : "none",
                     justifyContent: "center",
                   }}
                 >
@@ -394,6 +410,22 @@ const Portfolio = () => {
                     src={imagesMob[1]}
                     width={265}
                     height={200}
+                    preview={false}
+                    loading="lazy"
+                    alt="No Image Found"
+                  />
+                </div>
+                <div
+                  style={{
+                    display: screens.md ? "flex" : "none",
+                    justifyContent: "center",
+                  }}
+                >
+                  <Image
+                    className={styles.Mobimages}
+                    src={imagesMob[1]}
+                    width={380}
+                    height={280}
                     preview={false}
                     loading="lazy"
                     alt="No Image Found"
@@ -475,8 +507,8 @@ const Portfolio = () => {
                 >
                   <Image
                     src={images2[0]}
-                    width={265}
-                    height={220}
+                    width={screens.md ? 400 : 265}
+                    height={screens.md ? 320 : 220}
                     preview={false}
                     loading="lazy"
                     alt="No Image Found"
@@ -539,37 +571,6 @@ const Portfolio = () => {
                 </div>
               </Col>
             </Row>
-          </div>
-
-          <div className={styles.misonary} onScroll={handleScroll}>
-            <ResponsiveMasonry
-              columnsCountBreakPoints={{
-                320: 1,
-                710: 2,
-                900: 4,
-                1023: 2,
-                1100: 4,
-                2100: 6,
-              }}
-              columnGutter={10}
-            >
-              <Masonry>
-                {images1.map((image, i) => (
-                  <img
-                    key={i}
-                    src={image.url}
-                    style={{
-                      padding: "10px",
-                      width: image.width,
-                      height: image.height,
-                      display: "block",
-                      objectFit: "cover",
-                    }}
-                    alt=""
-                  />
-                ))}
-              </Masonry>
-            </ResponsiveMasonry>
           </div>
         </Slider>
         {/* <div className={styles.downarrow}>

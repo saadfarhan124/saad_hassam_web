@@ -5,6 +5,7 @@
    background-size: 100% 50%;
    background-position: center bottom 1rem;
    height: 100vh;
+   overflow: hidden !important;
 
 
  }
@@ -438,9 +439,7 @@
 
    }
 
-   .container {
-     overflow: hidden;
-   }
+   
    .container3{
     margin: 0  1rem;
    }
@@ -591,9 +590,7 @@
     margin: 0 8px;
   }
  
-  .container{
-    overflow-y: scroll;
-  }
+ 
   
  .textbox ,.textbox1 ,.clanbox{
   width: 500px ;
@@ -639,7 +636,7 @@
     margin: 0 8px;
   }
   .container{
-    overflow-y: scroll;
+    overflow-y: hidden;
   }
   
   .textbox ,.clanbox{

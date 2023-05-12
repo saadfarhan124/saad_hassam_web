@@ -4,7 +4,7 @@ import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
 import { MdArrowBackIos, MdArrowForwardIos } from "react-icons/md";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { Row, Col, Image, Typography } from "antd";
+import { Row, Col, Image, Typography, Grid } from "antd";
 import Slider from "react-slick";
 
 const images1 = [
@@ -48,8 +48,11 @@ const images2 = [
 
 const images3 = ["/assets/images/b1.png", "/assets/images/b2.png"];
 const images4 = ["/assets/images/c1.png", "/assets/images/c2.png"];
+const imagesMob = ["/assets/images/bm1.png", "/assets/images/cm1.png"];
 
 const Portfolio = () => {
+  const screens = Grid.useBreakpoint();
+
   const [scrollTop, setScrollTop] = useState(0);
 
   const [isScrolled, setIsScrolled] = useState(false);
@@ -123,9 +126,32 @@ const Portfolio = () => {
           <div className={styles.container4}>
             <Row className={styles.row}>
               <Col
-                xs={24}
-                sm={24}
-                md={24}
+                xs={{ span: 24 }}
+                sm={{ span: 24 }}
+                md={{ span: 24 }}
+                className={styles.col}
+              >
+                <div
+                  className={styles.Mobimages}
+                  style={{
+                    display: screens.xs || !screens.lg ? "flex" : "none",
+                    justifyContent: "center",
+                  }}
+                >
+                  <Image
+                    src={images[1]}
+                    width={265}
+                    height={200}
+                    preview={false}
+                    loading="lazy"
+                    alt="No Image Found"
+                  />
+                </div>
+              </Col>
+              <Col
+                xs={{ span: 24 }}
+                sm={{ span: 24 }}
+                md={{ span: 24 }}
                 lg={10}
                 xl={8}
                 xxl={8}
@@ -156,9 +182,9 @@ const Portfolio = () => {
                 </div>
               </Col>
               <Col
-                xs={24}
-                sm={24}
-                md={8}
+                xs={{ span: 24 }}
+                sm={{ span: 24 }}
+                md={{ span: 24 }}
                 lg={7}
                 xl={13}
                 xxl={11}
@@ -259,12 +285,28 @@ const Portfolio = () => {
                     loading="lazy"
                     alt="No Image Found"
                   />
+                </div>{" "}
+                <div
+                  className={styles.Mobimages}
+                  style={{
+                    display: screens.xs || !screens.lg ? "flex" : "none",
+                    justifyContent: "center",
+                  }}
+                >
+                  <Image
+                    src={imagesMob[0]}
+                    width={265}
+                    height={200}
+                    preview={false}
+                    loading="lazy"
+                    alt="No Image Found"
+                  />
                 </div>
               </Col>
               <Col
                 xs={24}
                 sm={24}
-                md={16}
+                md={24}
                 lg={11}
                 xl={{ span: 9, pull: 1 }}
                 xxl={{ span: 9, pull: 0 }}
@@ -298,7 +340,7 @@ const Portfolio = () => {
               <Col
                 xs={24}
                 sm={24}
-                md={8}
+                md={24}
                 lg={8}
                 xl={4}
                 xxl={{ span: 9, pullL: 2 }}
@@ -314,7 +356,7 @@ const Portfolio = () => {
                     loading="lazy"
                     alt="No Image Found"
                   />
-                </div>
+                </div>{" "}
               </Col>
             </Row>
           </div>
@@ -341,11 +383,27 @@ const Portfolio = () => {
                     alt="No Image Found"
                   />
                 </div>
+                <div
+                  className={styles.Mobimages}
+                  style={{
+                    display: screens.xs || !screens.lg ? "flex" : "none",
+                    justifyContent: "center",
+                  }}
+                >
+                  <Image
+                    src={imagesMob[1]}
+                    width={265}
+                    height={200}
+                    preview={false}
+                    loading="lazy"
+                    alt="No Image Found"
+                  />
+                </div>
               </Col>
               <Col
                 xs={24}
                 sm={24}
-                md={16}
+                md={24}
                 lg={11}
                 xl={{ span: 9, pull: 1 }}
                 xxl={{ span: 9, pull: 0 }}
@@ -402,6 +460,29 @@ const Portfolio = () => {
 
           <div className={styles.container4}>
             <Row className={styles.row}>
+              <Col
+                xs={{ span: 24 }}
+                sm={{ span: 24 }}
+                md={{ span: 24 }}
+                className={styles.col}
+              >
+                <div
+                  className={styles.Mobimages}
+                  style={{
+                    display: screens.xs || !screens.lg ? "flex" : "none",
+                    justifyContent: "center",
+                  }}
+                >
+                  <Image
+                    src={images2[0]}
+                    width={265}
+                    height={220}
+                    preview={false}
+                    loading="lazy"
+                    alt="No Image Found"
+                  />
+                </div>
+              </Col>
               <Col
                 xs={24}
                 sm={24}

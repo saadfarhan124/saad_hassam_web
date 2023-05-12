@@ -19,7 +19,9 @@
 @media (max-width: 2560px) {
  
 } 
-@media (max-width: 425px) {
+ 
+@media (min-width:280px ) and (max-width:1023px )  {
+
  
 .misonary {
   width: 100% !important;

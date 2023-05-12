@@ -567,7 +567,14 @@
 
  }
 
- @media (min-width:500px ) and (max-width:768px )  {
+ @media (min-width:500px ) and (max-width:1023px )  {
+  
+  .col1 {
+    margin-top: 0;
+    display: flex;
+    justify-content: center;
+  }
+ 
   .texts , .texts1 ,.textclan{
     width: 85%;
   }
@@ -595,13 +602,22 @@
  .textbox ,.textbox1 ,.clanbox{
   width: 500px ;
   margin-left: 2rem;
+  background:#D9D9D9 !important;
+  margin-top: 1rem ;
+
  }
+ 
   
  }
 
  @media (max-width: 425px) {}
 
- @media (max-width: 425px) {
+ @media (max-width: 499px) {
+  .col1 {
+    margin-top: 0;
+    display: flex;
+    justify-content: center;
+  }
   .downarrow{
     text-align: center;
     margin-top: -10rem;
@@ -622,7 +638,7 @@
     font-size: 20px !important;
   }
   .c4 ,.d4{
-    font-size: 11px;
+    font-size: 9px;
   }
   .container3{
     margin: 0 0;
@@ -641,17 +657,21 @@
   
   .textbox ,.clanbox{
     width: 265px;
+    height: 370px;
+    margin-top: 10px;
+  background:#D9D9D9 !important;
+
   }
   .texts{
-    width: 90%;
+    width: 98%;
   }  .textbox1{
     width: 265px;
   }
   .texts1{
-    width: 90%;
+    width: 98%;
   }
   .textclan{
-    width: 90%;
+    width: 98%;
     padding: 3px;
   }
   .misonary{
@@ -671,7 +691,7 @@
   }
 
   .container3{
-    margin: 0 0;
+    margin: 0 5px;
   } .container4{
     margin: 0 5px;
   }  .container5{
@@ -683,19 +703,21 @@
   }
   
   .textbox,.clanbox{
-    width: 200px;
-    height: 70vh;
+    width: 230px;
+    height: 360px;
+    margin-top: 10px;
+
   }
   .texts{
-    width: 90%;
+    width: 98%;
   }  .textbox1{
-    width: 200px;
+    width: 230px;
   }
   .texts1{
-    width: 90%;
+    width: 100%;
   }
   .textclan{
-    width: 90%;
+    width: 98%;
     text-align: justify;
   }
   .misonary{
@@ -708,7 +730,7 @@
     font-size: 18px !important;
   }
   .c4 ,.d4{
-    font-size: 9px;
+    font-size: 8px;
    
   }
   

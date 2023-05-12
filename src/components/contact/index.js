@@ -212,7 +212,11 @@ const Contact = () => {
                   loading={isLoading}
                   htmlType="submit"
                   type="primary"
-                  style={{ width: "100%" }}
+                  style={{
+                    width: "100%",
+                    display: screens.xs || !screens.md ? "none" : "",
+                  }}
+                  className="btn"
                 >
                   SEND MESSAGE
                 </Button>
@@ -251,6 +255,19 @@ const Contact = () => {
                     placeholder="Budget"
                   />
                 </Form.Item>
+                <Button
+                  size="large"
+                  loading={isLoading}
+                  htmlType="submit"
+                  type="primary"
+                  style={{
+                    width: "100%",
+                    display: screens.xs || !screens.md ? "" : "none",
+                  }}
+                  className="btn"
+                >
+                  SEND MESSAGE
+                </Button>
 
                 <Row
                   justify="space-between"

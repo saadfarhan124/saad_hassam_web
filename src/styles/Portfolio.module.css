@@ -79,6 +79,9 @@
 
 
  }
+ .row{
+  margin-top: 5rem;
+ }
 
  .col {
    padding: 0;
@@ -239,6 +242,19 @@
    bottom: 0;
  }
 
+ @media (min-width: 2560px) and (max-width: 5504px)  {
+  .Mobimages{
+    display: none !important;
+  }
+  .textbox1{
+    margin-left: -5rem;
+    height: 500px !important;
+    width: 1100px !important; 
+  }
+ }
+
+
+
  @media (max-width: 2560px) {
   .clanImage{
     margin-top: 3rem;
@@ -261,6 +277,7 @@
    .texts1{
     width: 65%;
    }
+   
    
     
 
@@ -471,6 +488,11 @@
    }
  }
 
+ @media (min-width: 1024px) and  (max-width: 5000px){
+.Mobimages{
+  display: none !important;
+} 
+}
  @media (max-width: 1024px) {
  
   .clanImage{
@@ -621,6 +643,9 @@
  @media (max-width: 425px) {}
 
  @media (max-width: 499px) {
+  .row{
+    margin-top: 0 !important;
+  }
   .col1 {
     margin-top: 0;
     display: flex;

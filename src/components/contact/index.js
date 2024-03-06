@@ -82,14 +82,15 @@ const Contact = () => {
       email: e.email,
       subject: selected.join(),
       message: `${e.message} Budget: ${e.budget}`,
+      website: 'saadhassam.com'
     };
 
     emailjs
       .send(
-        "service_s03de57",
-        "template_jfpa4y1",
+        process.env.NEXT_PUBLIC_SERVICE_ID,
+        process.env.NEXT_PUBLIC_TEMPLATE_ID,
         templateParams,
-        "f5eyikNj1kxRf-AHi"
+        process.env.NEXT_PUBLIC_PUBLIC_ID
       )
       .then(
         (response) => {
